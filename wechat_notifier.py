@@ -122,7 +122,9 @@ class WeChatNotifier:
                 funding_rate = signal['funding_rate'] * 100
                 price_change = signal['price_change_percent_24h'] * 100
                 market_cap = signal.get('market_cap_estimate', 0)
-                if market_cap >= 1e9:
+                if market_cap is None or market_cap <= 0:
+                    market_cap_str = "N/A"
+                elif market_cap >= 1e9:
                     market_cap_str = f"${market_cap/1e9:.2f}B"
                 elif market_cap >= 1e6:
                     market_cap_str = f"${market_cap/1e6:.1f}M"
@@ -150,7 +152,9 @@ class WeChatNotifier:
                 funding_rate = signal['funding_rate'] * 100
                 price_change = signal['price_change_percent_24h'] * 100
                 market_cap = signal.get('market_cap_estimate', 0)
-                if market_cap >= 1e9:
+                if market_cap is None or market_cap <= 0:
+                    market_cap_str = "N/A"
+                elif market_cap >= 1e9:
                     market_cap_str = f"${market_cap/1e9:.2f}B"
                 elif market_cap >= 1e6:
                     market_cap_str = f"${market_cap/1e6:.1f}M"
@@ -168,7 +172,9 @@ class WeChatNotifier:
             message += "\n⚠️  高风险交易对:\n"
             for _, row in high_risk.head(3).iterrows():
                 market_cap = row['market_cap_estimate']
-                if market_cap >= 1e9:
+                if market_cap is None or market_cap <= 0:
+                    market_cap_str = "N/A"
+                elif market_cap >= 1e9:
                     market_cap_str = f"${market_cap/1e9:.2f}B"
                 elif market_cap >= 1e6:
                     market_cap_str = f"${market_cap/1e6:.1f}M"
