@@ -105,8 +105,14 @@ def run_main_program():
         df = pd.DataFrame(market_data)
         # 合并流通量
         df['supply'] = df['symbol'].apply(lambda s: supply_dict.get(s))
-        # 计算市值
-        df['market_cap_estimate'] = df['supply'] * df['price']
+        # 修复：supply为None或0时，市值为None
+        def calc_market_cap(row):
+            supply = row['supply']
+            price = row['price']
+            if supply is None or supply == 0 or price is None or price == 0:
+                return None
+            return supply * price
+        df['market_cap_estimate'] = df.apply(calc_market_cap, axis=1)
         # 此时df已是成交量前100币种，无需再过滤
 
         if df is None or df.empty:
