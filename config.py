@@ -28,4 +28,8 @@ class Config:
     
     # 企业微信配置
     WECHAT_WEBHOOK_URL = os.getenv('WECHAT_WEBHOOK_URL', 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=d0a09574-50c3-4067-957a-fbdb13125870')  # 企业微信webhook地址
-    ENABLE_WECHAT_NOTIFICATION = os.getenv('ENABLE_WECHAT_NOTIFICATION', 'true').lower() == 'true'  # 是否启用企业微信通知 
+    ENABLE_WECHAT_NOTIFICATION = os.getenv('ENABLE_WECHAT_NOTIFICATION', 'true').lower() == 'true'  # 是否启用企业微信通知
+    
+    # CoinMarketCap API 配置（用于补充流通量数据）
+    COINMARKETCAP_API_KEY = os.getenv('COINMARKETCAP_API_KEY', '46d7b96c-791c-4a9f-8b15-8380d9087509')  # CoinMarketCap API Key
+    ENABLE_COINMARKETCAP = os.getenv('ENABLE_COINMARKETCAP', 'true').lower() == 'true'  # 是否启用 CoinMarketCap 作为备用数据源 

@@ -6,6 +6,7 @@
 
 - 自动获取币安USDT合约所有币种的最新行情、资金费率、未平仓合约、24h涨跌幅等
 - 支持本地流通量维护，manual_supply.py 可手动优先覆盖
+- **优先使用 CoinMarketCap API**，Coingecko 作为备用数据源，大幅提高流通量数据获取成功率
 - 只分析成交量前N（如100）币种，自动过滤冷门币
 - 市值、OI/市值、资金费率、风险评分等多维信号分析
 - 一键推送企业微信，推送内容美观、包含市值等关键信息
@@ -19,6 +20,8 @@ pip install -r requirements.txt
 ```
 
 2. 配置环境变量（可选，见 config.py）
+   - 企业微信 webhook 地址
+   - **CoinMarketCap API Key（推荐配置，提高流通量数据获取成功率）**
 
 3. 维护本地流通量（可选）
 - 运行 `python update_local_supply.py` 自动批量更新流通量
@@ -30,6 +33,36 @@ python scheduler.py --run-now
 ```
 
 ## 配置说明
+
+### 环境变量配置
+
+创建 `.env` 文件（可选）：
+```bash
+# 企业微信配置
+WECHAT_WEBHOOK_URL=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your_webhook_key
+ENABLE_WECHAT_NOTIFICATION=true
+
+# CoinMarketCap API 配置（推荐配置）
+COINMARKETCAP_API_KEY=your_coinmarketcap_api_key
+ENABLE_COINMARKETCAP=true
+
+# 其他配置
+LOG_LEVEL=INFO
+```
+
+### CoinMarketCap API Key 获取
+
+1. 访问 [CoinMarketCap Developer Portal](https://coinmarketcap.com/api/)
+2. 注册账号并创建 API Key
+3. 将 API Key 添加到环境变量或 `.env` 文件
+
+**优势：**
+- **优先使用 CoinMarketCap API**，数据更准确可靠
+- 当 CoinMarketCap 获取失败时，自动降级到 Coingecko
+- 大幅提高流通量数据获取成功率
+- 支持更多币种的数据获取
+
+### 其他配置
 
 - `TOP_VOLUME_LIMIT`：只分析成交量前N币种（默认100），可在 config.py 配置
 - `manual_supply.py`：手动优先覆盖流通量，未填写则用自动采集
