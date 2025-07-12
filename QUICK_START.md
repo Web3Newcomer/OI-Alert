@@ -63,6 +63,25 @@ MANUAL_SUPPLY = {
 }
 ```
 
+### 自动更新流通量（推荐）
+使用流通量更新工具自动获取最新数据：
+```bash
+# 强制更新所有币种的流通量（推荐）
+python3 update_supply.py --force-all --save
+
+# 只更新新币种的流通量
+python3 update_supply.py --new --save
+
+# 更新指定币种的流通量
+python3 update_supply.py --symbols BTC ETH BNB --force --save
+```
+
+**工具特性：**
+- ✅ 优先使用CoinMarketCap API，失败时自动降级到CoinGecko
+- ✅ 支持强制更新所有币种，不再因为"已有数据"就跳过
+- ✅ 获取失败的币种记录为None，便于后续处理
+- ✅ 自动备份原文件，生成详细更新报告
+
 ## ⚙️ 调整策略参数
 
 ### 方法1: 使用预设策略
@@ -156,6 +175,12 @@ A: 是的，每次运行主程序时都会自动更新币种列表
 
 ### Q: 流通量数据如何管理？
 A: 系统自动获取，`manual_supply.py` 可手动覆盖，优先级最高
+
+### Q: 如何更新流通量数据？
+A: 使用 `python3 update_supply.py --force-all --save` 强制更新所有币种
+
+### Q: 流通量获取失败怎么办？
+A: 失败的币种会记录为None，可以手动在 `manual_supply.py` 中设置，或重新运行更新工具
 
 ### Q: OI历史数据保存在哪里？
 A: 保存在 `oi_history_data/` 目录，每天一个文件，自动保留10天

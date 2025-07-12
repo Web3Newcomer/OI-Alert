@@ -89,6 +89,57 @@ def get_final_supply():
 - ✅ **移除无效币种**：只移除API返回400错误的币种
 - ✅ **添加新币种**：新币种的流通量设为None，等待后续补充
 
+#### **流通量更新工具**
+
+##### **自动流通量更新**
+```bash
+# 强制更新所有币种的流通量（推荐）
+python3 update_supply.py --force-all --save
+
+# 只更新新币种的流通量
+python3 update_supply.py --new --save
+
+# 更新指定币种的流通量
+python3 update_supply.py --symbols BTC ETH BNB --force --save
+
+# 更新所有币种（包括已有数据的）
+python3 update_supply.py --all --force --save
+```
+
+##### **工具特性**
+- **双重数据源**：优先使用CoinMarketCap API，失败时自动降级到CoinGecko
+- **强制更新**：支持强制更新所有币种，不再因为"已有数据"就跳过
+- **失败记录**：获取失败的币种记录为None，便于后续处理
+- **自动备份**：更新前自动备份原文件
+- **详细报告**：生成更新报告，记录成功和失败的币种
+
+##### **更新报告示例**
+```json
+{
+  "update_time": "2025-07-12 23:21:02",
+  "total_symbols": 449,
+  "updated_symbols": [
+    {"symbol": "BTC", "supply": 19891356},
+    {"symbol": "ETH", "supply": 120715200}
+  ],
+  "failed_symbols": [
+    "1MBABYDOGE",
+    "TESTFAIL"
+  ]
+}
+```
+
+##### **数据文件格式**
+```python
+# manual_supply.py
+MANUAL_SUPPLY = {
+    'BTC': 19891356,        # 成功获取
+    'ETH': 120715200,       # 成功获取
+    '1MBABYDOGE': None,     # 获取失败
+    'TESTFAIL': None,       # 获取失败
+}
+```
+
 ### 📈 OI历史数据收集
 
 #### **数据收集机制**
@@ -257,6 +308,7 @@ LOG_LEVEL=INFO
 - `oi_history_collector.py` - OI历史数据收集器
 - `wechat_notifier.py` - 企业微信通知器
 - `update_symbols.py` - 币种列表更新工具
+- `update_supply.py` - 流通量数据更新工具
 
 ### 配置文件
 - `config.py` - 基础配置文件
@@ -272,6 +324,7 @@ LOG_LEVEL=INFO
 ### 文档文件
 - `README.md` - 项目说明文档
 - `QUICK_START.md` - 快速开始指南
+- `SUPPLY_UPDATE_GUIDE.md` - 流通量更新工具使用指南
 - `PROJECT_CLEANUP.md` - 项目清理说明
 - `LOCAL_DATA_SYSTEM.md` - 本地数据系统说明
 
