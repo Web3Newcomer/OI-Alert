@@ -177,9 +177,12 @@ def setup_schedule(every_hours=None, funding_rate_mode=False):
         logger.info("定时任务已设置：每天东八区上午8点运行主程序")
     logger.info("按 Ctrl+C 停止定时任务")
 
-def run_scheduler():
+def run_scheduler(every_hours=None, funding_rate_mode=False):
     """运行调度器"""
-    setup_schedule()
+    setup_schedule(every_hours, funding_rate_mode)
+    
+    # 显示下次运行时间
+    show_next_run()
     
     try:
         while True:
@@ -221,8 +224,7 @@ if __name__ == '__main__':
         setup_schedule(args.every_hours, args.funding_rate)
         show_next_run()
     elif args.daemon:
-        setup_schedule(args.every_hours, args.funding_rate)
-        run_scheduler()
+        run_scheduler(args.every_hours, args.funding_rate)
     else:
         parser.print_help()
         print("\n使用示例:")
