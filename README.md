@@ -7,6 +7,7 @@
 - 自动获取币安USDT合约所有币种的最新行情、资金费率、未平仓合约、24h涨跌幅等
 - **动态币种列表更新**：自动检测无效币种，添加新币种，保持与币安API同步
 - **智能流通量管理**：支持本地流通量维护，manual_supply.py 可手动优先覆盖
+- **币种映射管理**：通过symbol_mapping.json管理币安与CoinMarketCap的币种映射关系
 - **优先使用 CoinMarketCap API**，Coingecko 作为备用数据源，大幅提高流通量数据获取成功率
 - **OI历史数据收集**：每4小时自动收集OI数据，支持历史分析和异常检测
 - 只分析成交量前N（如100）币种，自动过滤冷门币
@@ -30,6 +31,7 @@ pip install -r requirements.txt
    - 系统会自动维护币种列表，无需手动操作
    - 如需手动更新：`python update_symbols.py --update`
    - 在 `manual_supply.py` 填写需手动覆盖的币种流通量
+   - 维护 `symbol_mapping.json` 币种映射文件
 
 4. 一键运行主流程
 ```bash
@@ -88,6 +90,31 @@ def get_final_supply():
 - ✅ **保留现有流通量**：更新币种列表时，保留所有现有币种的流通量数据
 - ✅ **移除无效币种**：只移除API返回400错误的币种
 - ✅ **添加新币种**：新币种的流通量设为None，等待后续补充
+
+#### **币种映射管理**
+
+##### **symbol_mapping.json 文件**
+```json
+{
+  "BTC": "bitcoin",
+  "ETH": "ethereum",
+  "BNB": "binancecoin",
+  "PUMP": "pumpbtc",
+  "1000PEPE": "pepe",
+  "1000BONK": "bonk",
+  "1000SHIB": "shiba-inu"
+}
+```
+
+##### **映射规则**
+- **键**：币安永续合约符号（如 BTC、ETH、PUMP）
+- **值**：CoinMarketCap 币种 ID（如 bitcoin、ethereum、pumpbtc）
+- **用途**：确保币安币种能正确映射到 CoinMarketCap 获取流通量数据
+
+##### **映射管理**
+- **自动生成**：系统会自动为新币种生成映射模板
+- **手动维护**：需要手动填写正确的 CoinMarketCap 币种 ID
+- **优先级**：映射文件中的配置优先于自动生成的映射
 
 #### **流通量更新工具**
 
@@ -213,6 +240,7 @@ LOG_LEVEL=INFO
 
 - `TOP_VOLUME_LIMIT`：只分析成交量前N币种（默认100），可在 config.py 配置
 - `manual_supply.py`：手动优先覆盖流通量，未填写则用自动采集
+- `symbol_mapping.json`：币种映射配置文件
 
 ## 推送内容示例
 
@@ -300,6 +328,46 @@ LOG_LEVEL=INFO
 
 > **推荐使用 `--funding-rate` 模式**，在每次资金费率结算后立即分析市场信号，确保及时捕捉市场变化。
 
+## 系统架构
+
+### 核心模块
+
+```
+币安永续合约交易信号系统
+├── 数据采集层
+│   ├── 币种列表更新 (update_symbols.py)
+│   ├── 流通量数据获取 (update_supply.py)
+│   ├── OI历史数据收集 (oi_history_collector.py)
+│   └── 实时行情获取 (trading_signal_analyzer.py)
+├── 数据处理层
+│   ├── 币种映射管理 (symbol_mapping.json)
+│   ├── 流通量数据合并 (manual_supply.py + local_supply.py)
+│   ├── OI历史数据分析
+│   └── 市值计算
+├── 信号分析层
+│   ├── OI市值警报 (买入信号)
+│   ├── OI异常警报 (市场异常警告)
+│   ├── 信号强度计算
+│   └── 风险评分
+├── 通知推送层
+│   ├── 企业微信通知 (wechat_notifier.py)
+│   └── 控制台输出
+└── 调度控制层
+    ├── 定时任务调度 (scheduler.py)
+    ├── 资金费率结算时间调度
+    └── 守护进程管理
+```
+
+### 数据流向
+
+```
+币安API → 币种列表 → 流通量数据 → 实时行情 → 信号分析 → 警报触发 → 通知推送
+    ↓
+CoinMarketCap API → 币种映射 → 流通量获取 → 市值计算
+    ↓
+OI历史数据 → 异常检测 → OI比率计算
+```
+
 ## 文件结构说明
 
 ### 核心程序文件
@@ -315,6 +383,7 @@ LOG_LEVEL=INFO
 - `strategy_config.py` - 策略参数配置
 - `local_supply.py` - 自动获取的流通量数据
 - `manual_supply.py` - 手动设置的流通量数据
+- `symbol_mapping.json` - 币种映射配置文件
 
 ### 数据文件
 - `oi_history_data/` - OI历史数据存储目录
@@ -328,10 +397,52 @@ LOG_LEVEL=INFO
 - `PROJECT_CLEANUP.md` - 项目清理说明
 - `LOCAL_DATA_SYSTEM.md` - 本地数据系统说明
 
+## 维护指南
+
+### 日常维护
+
+1. **监控系统运行状态**
+   - 查看日志文件 `scheduler.log`
+   - 检查企业微信推送是否正常
+   - 监控API调用频率
+
+2. **币种映射维护**
+   - 定期检查 `symbol_mapping.json` 中的映射关系
+   - 为新币种添加正确的 CoinMarketCap 映射
+   - 删除已下架的币种映射
+
+3. **流通量数据维护**
+   - 使用 `update_supply.py` 定期更新流通量数据
+   - 在 `manual_supply.py` 中手动补充重要币种的流通量
+   - 检查流通量数据获取失败的情况
+
+4. **OI历史数据管理**
+   - 系统自动管理，无需手动干预
+   - 自动清理超过10天的历史数据
+   - 确保历史数据积累足够进行异常检测
+
+### 故障排除
+
+1. **API调用失败**
+   - 检查网络连接
+   - 验证API密钥是否有效
+   - 检查API调用频率限制
+
+2. **币种映射错误**
+   - 检查 `symbol_mapping.json` 中的映射关系
+   - 验证 CoinMarketCap 币种 ID 是否正确
+   - 使用 `update_supply.py` 重新获取流通量数据
+
+3. **企业微信推送失败**
+   - 检查 webhook URL 是否正确
+   - 验证企业微信机器人配置
+   - 查看推送日志
+
 ## 注意事项
 
 - **币种列表自动更新**：系统会自动维护币种列表，无需手动干预
 - **流通量数据保护**：更新币种列表时会保留现有流通量数据
+- **币种映射管理**：需要手动维护 `symbol_mapping.json` 确保映射正确
 - **OI历史数据积累**：历史数据需要时间积累，初期OI比率可能不准确
 - **企业微信推送**：需配置 webhook 地址
 - **API速率限制**：主流程已自动分批防限流

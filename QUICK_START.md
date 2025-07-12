@@ -43,6 +43,7 @@ python3 scheduler.py --daemon --funding-rate
 系统会自动维护币种列表和流通量数据：
 - **币种列表更新**：每次运行自动检测无效币种，添加新币种
 - **流通量数据**：自动获取并缓存，支持手动覆盖
+- **币种映射**：自动生成映射模板，支持手动维护
 
 ### 手动更新（可选）
 ```bash
@@ -52,6 +53,39 @@ python3 update_symbols.py --update
 # 只获取有效币种列表
 python3 update_symbols.py --get-valid
 ```
+
+### 币种映射管理
+
+#### 什么是币种映射？
+币种映射用于将币安永续合约符号映射到CoinMarketCap的币种ID，确保能正确获取流通量数据。
+
+#### 映射文件格式
+`symbol_mapping.json` 文件格式：
+```json
+{
+  "BTC": "bitcoin",
+  "ETH": "ethereum",
+  "BNB": "binancecoin",
+  "PUMP": "pumpbtc",
+  "1000PEPE": "pepe",
+  "1000BONK": "bonk",
+  "1000SHIB": "shiba-inu"
+}
+```
+
+#### 映射规则
+- **键**：币安永续合约符号（如 BTC、ETH、PUMP）
+- **值**：CoinMarketCap 币种 ID（如 bitcoin、ethereum、pumpbtc）
+
+#### 映射管理
+- **自动生成**：系统会自动为新币种生成映射模板
+- **手动维护**：需要手动填写正确的 CoinMarketCap 币种 ID
+- **优先级**：映射文件中的配置优先于自动生成的映射
+
+#### 如何查找CoinMarketCap币种ID？
+1. 访问 [CoinMarketCap](https://coinmarketcap.com/)
+2. 搜索币种名称
+3. 查看URL中的币种ID，如：`https://coinmarketcap.com/currencies/bitcoin/` 中的 `bitcoin`
 
 ### 手动设置流通量
 在 `manual_supply.py` 中添加需要手动覆盖的币种：
@@ -188,6 +222,15 @@ A: 保存在 `oi_history_data/` 目录，每天一个文件，自动保留10天
 ### Q: 如何查看下次运行时间？
 A: 运行 `python3 scheduler.py --show-next`
 
+### Q: 币种映射错误怎么办？
+A: 检查 `symbol_mapping.json` 中的映射关系，确保CoinMarketCap币种ID正确
+
+### Q: 如何添加新币种的映射？
+A: 在 `symbol_mapping.json` 中添加新币种的映射关系，格式为 `"币安符号": "CoinMarketCap币种ID"`
+
+### Q: 币种映射会自动生成吗？
+A: 系统会自动为新币种生成映射模板，但需要手动填写正确的CoinMarketCap币种ID
+
 ## 📞 技术支持
 
 如果遇到问题，请检查：
@@ -195,7 +238,8 @@ A: 运行 `python3 scheduler.py --show-next`
 2. Python版本是否为3.7+
 3. 依赖包是否正确安装
 4. 企业微信webhook配置是否正确
-5. 查看日志输出，了解具体错误信息
+5. 币种映射是否正确配置
+6. 查看日志输出，了解具体错误信息
 
 ## 🎉 开始使用
 
@@ -203,8 +247,9 @@ A: 运行 `python3 scheduler.py --show-next`
 
 1. **先运行一次测试**：`python3 scheduler.py --run-now`
 2. **查看推送效果**：确认企业微信通知正常
-3. **选择合适的策略**：根据风险偏好选择保守/平衡/激进策略
-4. **启动定时任务**：`python3 scheduler.py --daemon --funding-rate`
-5. **定期监控**：查看日志和推送结果，调整策略参数
+3. **检查币种映射**：确保重要币种的映射关系正确
+4. **选择合适的策略**：根据风险偏好选择保守/平衡/激进策略
+5. **启动定时任务**：`python3 scheduler.py --daemon --funding-rate`
+6. **定期监控**：查看日志和推送结果，调整策略参数
 
 系统会自动维护币种列表、收集OI历史数据、分析交易信号，为您提供专业的量化交易支持！ 

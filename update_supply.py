@@ -22,6 +22,22 @@ class SupplyUpdater:
     def __init__(self):
         self.coinmarketcap_api_key = getattr(Config, 'COINMARKETCAP_API_KEY', None)
         self.enable_coinmarketcap = getattr(Config, 'ENABLE_COINMARKETCAP', True)
+        self.symbol_mapping = self.load_symbol_mapping()
+    
+    def load_symbol_mapping(self):
+        """加载币种名称映射"""
+        try:
+            with open('symbol_mapping.json', 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            return {}
+    
+    def get_mapped_symbol(self, symbol):
+        """获取映射后的币种名称"""
+        if symbol in self.symbol_mapping:
+            source, mapped_id = self.symbol_mapping[symbol]
+            return mapped_id
+        return symbol
         
     def get_coinmarketcap_supply(self, symbol):
         """从CoinMarketCap获取币种流通量"""
@@ -30,6 +46,9 @@ class SupplyUpdater:
             return None
             
         try:
+            # 使用映射后的币种名称
+            mapped_symbol = self.get_mapped_symbol(symbol)
+            
             # CoinMarketCap API v2
             url = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest"
             headers = {
@@ -37,7 +56,7 @@ class SupplyUpdater:
                 'Accept': 'application/json'
             }
             params = {
-                'symbol': symbol,
+                'symbol': mapped_symbol,
                 'convert': 'USD'
             }
             
@@ -45,13 +64,13 @@ class SupplyUpdater:
             
             if response.status_code == 200:
                 data = response.json()
-                if 'data' in data and symbol in data['data']:
-                    coin_data = data['data'][symbol][0]
+                if 'data' in data and mapped_symbol in data['data']:
+                    coin_data = data['data'][mapped_symbol][0]
                     circulating_supply = coin_data.get('circulating_supply')
                     if circulating_supply:
                         return int(circulating_supply)
             
-            logger.warning(f"无法从CoinMarketCap获取 {symbol} 的流通量数据")
+            logger.warning(f"无法从CoinMarketCap获取 {symbol} (映射: {mapped_symbol}) 的流通量数据")
             return None
             
         except Exception as e:
@@ -61,8 +80,11 @@ class SupplyUpdater:
     def get_coingecko_supply(self, symbol):
         """从CoinGecko获取币种流通量（备用方案）"""
         try:
+            # 使用映射后的币种名称
+            mapped_symbol = self.get_mapped_symbol(symbol)
+            
             # 获取币种ID
-            url = f"https://api.coingecko.com/api/v3/search?query={symbol}"
+            url = f"https://api.coingecko.com/api/v3/search?query={mapped_symbol}"
             response = requests.get(url, timeout=10)
             
             if response.status_code == 200:
@@ -80,7 +102,7 @@ class SupplyUpdater:
                         if circulating_supply:
                             return int(circulating_supply)
             
-            logger.warning(f"无法从CoinGecko获取 {symbol} 的流通量数据")
+            logger.warning(f"无法从CoinGecko获取 {symbol} (映射: {mapped_symbol}) 的流通量数据")
             return None
             
         except Exception as e:
