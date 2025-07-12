@@ -72,9 +72,13 @@ class TradingSignalAnalyzer:
             # 获取所有币种
             symbols = df['symbol'].tolist()
             
+            # 更新历史数据
+            logger.info("开始更新OI历史数据...")
+            self.oi_collector.update_history_data(symbols)
+            
             # 获取OI比率数据
-            logger.info("开始获取OI历史数据...")
-            oi_ratios = self.oi_collector.get_oi_ratios(symbols, use_cache=True)
+            logger.info("开始获取OI比率数据...")
+            oi_ratios = self.oi_collector.get_oi_ratios(symbols)
             
             # 添加OI比率到数据框
             df['oi_surge_ratio'] = df['symbol'].map(lambda x: oi_ratios.get(x, 1.0))
@@ -150,6 +154,8 @@ class TradingSignalAnalyzer:
         if not self.enable_new_alert_conditions:
             return pd.Series(False, index=df.index)
         
+        # 使用历史OI比率进行警报检测
+        # 当资金费率绝对值较大且OI短期激增时触发警报
         alert_conditions = (
             (df['funding_rate_abs'].fillna(0) > self.funding_rate_abs_threshold) &  # 资金费率绝对值 > 0.1%
             (df['oi_surge_ratio'].fillna(1.0) > self.oi_surge_ratio_threshold)  # OI短期激增 > 2
@@ -229,7 +235,7 @@ class TradingSignalAnalyzer:
             return pd.DataFrame()
         
         # 筛选买入信号
-        buy_signals = df[df['buy_signal'] == True].copy()
+        buy_signals = df[df['buy_signal']].copy()
         
         if buy_signals.empty:
             logger.info("没有找到买入信号")
@@ -246,7 +252,7 @@ class TradingSignalAnalyzer:
             return pd.DataFrame()
         
         # 筛选警报信号
-        alert_signals = df[df.get('alert_signal', False) == True].copy()
+        alert_signals = df[df.get('alert_signal', False)].copy()
         
         if alert_signals.empty:
             logger.info("没有找到警报信号")
@@ -264,8 +270,8 @@ class TradingSignalAnalyzer:
         
         report = {
             "total_symbols": len(df),
-            "buy_signals": len(df[df['buy_signal'] == True]),
-            "sell_signals": len(df[df['sell_signal'] == True]),
+            "buy_signals": len(df[df['buy_signal']]),
+            "sell_signals": len(df[df['sell_signal']]),
             "strong_signals": len(df[df['signal_strength'] > 80]),
             "average_signal_strength": df['signal_strength'].mean(),
             "average_risk_score": df['risk_score'].mean(),
@@ -280,7 +286,7 @@ class TradingSignalAnalyzer:
         # 添加新警报信号统计
         if self.enable_new_alert_conditions:
             alert_signals = self.get_alert_signals(df, 5)
-            report["alert_signals"] = len(df[df.get('alert_signal', False) == True])
+            report["alert_signals"] = len(df[df.get('alert_signal', False)])
             report["top_alert_signals"] = alert_signals.to_dict('records')
             
             # 添加新指标统计
@@ -303,8 +309,8 @@ class TradingSignalAnalyzer:
         
         # 基本统计信息
         total_symbols = len(df)
-        buy_signals = len(df[df['buy_signal'] == True])
-        sell_signals = len(df[df['sell_signal'] == True])
+        buy_signals = len(df[df['buy_signal']])
+        sell_signals = len(df[df['sell_signal']])
         strong_signals = len(df[df['signal_strength'] > 80])
         
         print(f"📈 分析币种: {total_symbols}")
@@ -316,7 +322,7 @@ class TradingSignalAnalyzer:
         
         # 新警报信号统计
         if self.enable_new_alert_conditions:
-            alert_signals = len(df[df.get('alert_signal', False) == True])
+            alert_signals = len(df[df.get('alert_signal', False)])
             print(f"🚨 OI异常警报: {alert_signals}")
             
             if 'oi_surge_ratio' in df.columns:
@@ -327,7 +333,7 @@ class TradingSignalAnalyzer:
         print()
         
         # 推荐买入信号
-        buy_signals_df = df[df['buy_signal'] == True].copy()
+        buy_signals_df = df[df['buy_signal']].copy()
         if not buy_signals_df.empty:
             print("\n🔥 推荐买入信号:")
             print("-" * 80)
@@ -381,7 +387,7 @@ class TradingSignalAnalyzer:
                 print("\n暂无OI异常警报信号\n")
         
         # 推荐卖出信号
-        sell_signals_df = df[df['sell_signal'] == True].copy()
+        sell_signals_df = df[df['sell_signal']].copy()
         if not sell_signals_df.empty:
             print("\n🚨 推荐卖出信号:")
             print("-" * 80)

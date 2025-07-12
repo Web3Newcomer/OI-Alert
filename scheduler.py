@@ -14,6 +14,7 @@ from wechat_notifier import WeChatNotifier
 from config import Config
 from local_supply import COIN_SUPPLY
 from manual_supply import MANUAL_SUPPLY
+from oi_history_collector import OIHistoryCollector
 import requests
 
 # 设置日志
@@ -98,10 +99,19 @@ def run_main_program():
         
         # 合并流通量数据，manual_supply 优先
         supply_dict = get_final_supply()
-        symbols = list(supply_dict.keys())
+        current_symbols = list(supply_dict.keys())
+        
+        # 动态更新币种列表
+        oi_collector = OIHistoryCollector()
+        updated_symbols = oi_collector.update_symbols_list(current_symbols)
+        
+        # 如果币种列表有更新，记录日志
+        if len(updated_symbols) != len(current_symbols):
+            logger.info(f"币种列表已更新: {len(current_symbols)} -> {len(updated_symbols)}")
+            # 这里可以添加币种列表持久化逻辑，如果需要的话
         
         # 获取币安行情数据（只采集前100 OI）
-        market_data = get_binance_futures_data(symbols)
+        market_data = get_binance_futures_data(updated_symbols)
         df = pd.DataFrame(market_data)
         # 合并流通量
         df['supply'] = df['symbol'].apply(lambda s: supply_dict.get(s))
