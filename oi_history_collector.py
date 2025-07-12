@@ -31,7 +31,7 @@ class OIHistoryCollector:
             url = f"{self.base_url}/openInterestHist"
             params = {
                 'symbol': symbol,
-                'period': '5m',  # 5分钟周期
+                'period': '4h',  # 4小时周期
                 'limit': limit
             }
             
@@ -48,7 +48,7 @@ class OIHistoryCollector:
             return []
     
     def calculate_oi_ratio(self, symbol: str) -> float:
-        """计算OI比率：最近3次均值 / 最近10次均值"""
+        """计算OI比率：最近3次4小时均值 / 最近10次4小时均值"""
         try:
             # 获取最近10次OI数据
             oi_history = self.get_oi_history(symbol, limit=10)
@@ -60,10 +60,10 @@ class OIHistoryCollector:
             # 提取OI值
             oi_values = [float(item['sumOpenInterest']) for item in oi_history]
             
-            # 计算最近3次均值
+            # 计算最近3次4小时均值
             recent_3_avg = sum(oi_values[:3]) / 3
             
-            # 计算最近10次均值
+            # 计算最近10次4小时均值
             recent_10_avg = sum(oi_values) / 10
             
             # 避免除零错误

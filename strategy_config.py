@@ -26,7 +26,7 @@ class StrategyConfig:
     FUNDING_RATE_ABS_THRESHOLD = 0.001  # 资金费率绝对值 > 0.1%
     
     # OI短期激增比率阈值
-    OI_SURGE_RATIO_THRESHOLD = 2.0  # 最近3次OI均值 / 最近10次OI均值 > 2
+    OI_SURGE_RATIO_THRESHOLD = 2.0  # 最近3次4小时OI均值 / 最近10次4小时OI均值 > 2
     
     # 是否启用新警报条件
     ENABLE_NEW_ALERT_CONDITIONS = True
