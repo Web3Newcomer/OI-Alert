@@ -63,5 +63,6 @@ MANUAL_SUPPLY = {
     'VELODROME': 961652795,
     'XAI': 1280634068,
     'XVG': 16521951235,
+    'PUMP': 1000000000000,  # pump.fun 总供应量 1万亿
 
 }

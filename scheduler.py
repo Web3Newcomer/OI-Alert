@@ -128,6 +128,13 @@ def run_main_program():
         if not signals_df.empty:
             summary_stats = analyzer.generate_report(signals_df)
             message = wechat_notifier.format_trading_signals_message(signals_df, summary_stats)
+            
+            # 检查是否有警报信号
+            alert_signals_count = summary_stats.get('alert_signals', 0)
+            if alert_signals_count > 0:
+                logger.info(f"发现 {alert_signals_count} 个警报信号")
+                # 可以在这里添加特殊的警报处理逻辑
+                
             if wechat_notifier.send_notification_auto(message):
                 logger.info("企业微信通知发送成功")
             else:
@@ -147,13 +154,25 @@ def run_main_program():
     except Exception as e:
         logger.error(f"定时任务执行失败: {e}", exc_info=True)
 
-def setup_schedule(every_hours=None):
-    """设置定时任务，可选每隔N小时运行"""
-    if every_hours is not None:
+def setup_schedule(every_hours=None, funding_rate_mode=False):
+    """设置定时任务
+    
+    Args:
+        every_hours: 每隔N小时运行一次
+        funding_rate_mode: 是否按资金费率结算时间运行（每8小时一次）
+    """
+    if funding_rate_mode:
+        # 按币安资金费率结算时间运行（UTC时间 00:00、08:00、16:00）
+        # 转换为东八区时间：08:00、16:00、00:00（次日）
+        schedule.every().day.at("08:00").do(run_main_program)  # UTC 00:00
+        schedule.every().day.at("16:00").do(run_main_program)  # UTC 08:00
+        schedule.every().day.at("00:00").do(run_main_program)  # UTC 16:00 (次日)
+        logger.info("定时任务已设置：按币安资金费率结算时间运行（东八区 00:00、08:00、16:00）")
+    elif every_hours is not None:
         schedule.every(every_hours).hours.do(run_main_program)
         logger.info(f"定时任务已设置：每{every_hours}小时运行一次主程序")
     else:
-        # 每天东八区上午8点运行
+        # 每天东八区上午8点运行（默认）
         schedule.every().day.at("08:00").do(run_main_program)
         logger.info("定时任务已设置：每天东八区上午8点运行主程序")
     logger.info("按 Ctrl+C 停止定时任务")
@@ -192,22 +211,24 @@ if __name__ == '__main__':
     parser.add_argument('--show-next', action='store_true', help='显示下次运行时间')
     parser.add_argument('--daemon', action='store_true', help='以守护进程模式运行定时任务')
     parser.add_argument('--every-hours', type=int, default=None, help='每隔N小时运行一次（如1或2）')
+    parser.add_argument('--funding-rate', action='store_true', help='按币安资金费率结算时间运行（每8小时一次）')
     
     args = parser.parse_args()
     
     if args.run_now:
         run_once()
     elif args.show_next:
-        setup_schedule(args.every_hours)
+        setup_schedule(args.every_hours, args.funding_rate)
         show_next_run()
     elif args.daemon:
-        setup_schedule(args.every_hours)
+        setup_schedule(args.every_hours, args.funding_rate)
         run_scheduler()
     else:
         parser.print_help()
         print("\n使用示例:")
-        print("  python scheduler.py --run-now     # 立即运行一次")
-        print("  python scheduler.py --show-next   # 显示下次运行时间")
-        print("  python scheduler.py --daemon      # 启动定时任务守护进程")
-        print("  python scheduler.py --daemon --every-hours 1   # 每1小时运行一次")
-        print("  python scheduler.py --daemon --every-hours 2   # 每2小时运行一次")
+        print("  python scheduler.py --run-now                    # 立即运行一次")
+        print("  python scheduler.py --show-next                  # 显示下次运行时间")
+        print("  python scheduler.py --daemon                     # 启动定时任务守护进程")
+        print("  python scheduler.py --daemon --every-hours 1     # 每1小时运行一次")
+        print("  python scheduler.py --daemon --every-hours 2     # 每2小时运行一次")
+        print("  python scheduler.py --daemon --funding-rate      # 按资金费率结算时间运行")

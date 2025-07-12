@@ -20,6 +20,17 @@ class StrategyConfig:
     # 信号强度阈值
     SIGNAL_STRENGTH_THRESHOLD = 60  # 信号强度 > 60 才生成买入信号
     
+    # ==================== 新警报条件参数 ====================
+    
+    # 资金费率绝对值阈值 (0.1%)
+    FUNDING_RATE_ABS_THRESHOLD = 0.001  # 资金费率绝对值 > 0.1%
+    
+    # OI短期激增比率阈值
+    OI_SURGE_RATIO_THRESHOLD = 2.0  # 最近3次OI均值 / 最近10次OI均值 > 2
+    
+    # 是否启用新警报条件
+    ENABLE_NEW_ALERT_CONDITIONS = True
+    
     # ==================== 市值估算参数 ====================
     
     # 注意：现在使用 local_supply.py 中的真实流通量数据
@@ -98,6 +109,9 @@ class StrategyConfig:
         config.VOLUME_MARKET_CAP_RATIO_THRESHOLD = 0.15
         config.SIGNAL_STRENGTH_THRESHOLD = 75
         config.MAX_RISK_SCORE = 50
+        # 新警报条件 - 保守设置
+        config.FUNDING_RATE_ABS_THRESHOLD = 0.002  # 0.2%
+        config.OI_SURGE_RATIO_THRESHOLD = 2.5  # 更严格的OI激增要求
         return config
     
     @classmethod
@@ -109,6 +123,9 @@ class StrategyConfig:
         config.VOLUME_MARKET_CAP_RATIO_THRESHOLD = 0.05
         config.SIGNAL_STRENGTH_THRESHOLD = 50
         config.MAX_RISK_SCORE = 80
+        # 新警报条件 - 激进设置
+        config.FUNDING_RATE_ABS_THRESHOLD = 0.0005  # 0.05%
+        config.OI_SURGE_RATIO_THRESHOLD = 1.5  # 更宽松的OI激增要求
         return config
     
     @classmethod
@@ -120,6 +137,9 @@ class StrategyConfig:
         config.VOLUME_MARKET_CAP_RATIO_THRESHOLD = 0.1
         config.SIGNAL_STRENGTH_THRESHOLD = 60
         config.MAX_RISK_SCORE = 70
+        # 新警报条件 - 平衡设置
+        config.FUNDING_RATE_ABS_THRESHOLD = 0.001  # 0.1%
+        config.OI_SURGE_RATIO_THRESHOLD = 2.0  # 标准OI激增要求
         return config
 
  

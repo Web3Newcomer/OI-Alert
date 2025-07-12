@@ -101,7 +101,7 @@ class WeChatNotifier:
             f"【币安永续合约交易信号分析报告】\n"
             f"分析时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')} (东八区)\n"
             f"分析币种: {summary_stats.get('total_symbols', 0)}\n"
-            f"买入信号: {summary_stats.get('buy_signals', 0)}\n"
+            f"OI/市值警报: {summary_stats.get('buy_signals', 0)}\n"
             f"卖出信号: {summary_stats.get('sell_signals', 0)}\n"
             f"强信号: {summary_stats.get('strong_signals', 0)}\n"
             f"平均信号强度: {summary_stats.get('average_signal_strength', 0):.1f}\n"
@@ -110,8 +110,19 @@ class WeChatNotifier:
             f"平均资金费率: {summary_stats.get('summary_stats', {}).get('avg_funding_rate', 0)*100:.3f}%\n"
             f"平均价格变化: {summary_stats.get('summary_stats', {}).get('avg_price_change', 0)*100:.2f}%\n"
         )
+        
+        # 添加新警报信号统计
+        if 'alert_signals' in summary_stats:
+            message += f"🚨 OI异常警报: {summary_stats.get('alert_signals', 0)}\n"
+            if 'avg_oi_surge_ratio' in summary_stats.get('summary_stats', {}):
+                message += f"平均OI激增比率: {summary_stats['summary_stats']['avg_oi_surge_ratio']:.2f}\n"
+            if 'avg_funding_rate_abs' in summary_stats.get('summary_stats', {}):
+                message += f"平均资金费率绝对值: {summary_stats['summary_stats']['avg_funding_rate_abs']*100:.3f}%\n"
+        else:
+            message += f"🚨 OI异常警报: 0\n"
+        
         if not buy_signals.empty:
-            message += "\n【推荐买入信号】\n"
+            message += "\n【OI/市值警报信号】\n"
             top_signals = buy_signals.nlargest(5, 'signal_strength')
             for idx, (_, signal) in enumerate(top_signals.iterrows(), 1):
                 symbol = signal['symbol']
@@ -136,7 +147,33 @@ class WeChatNotifier:
                     f"资金费率: {funding_rate:.3f}%  24h涨跌: {price_change:+.2f}%\n"
                 )
         else:
-            message += "\n暂无推荐买入信号\n"
+            message += "\n暂无OI/市值警报信号\n"
+
+        # 新警报信号
+        if 'top_alert_signals' in summary_stats and summary_stats['top_alert_signals']:
+            message += "\n🚨【OI异常警报信号】\n"
+            for idx, signal in enumerate(summary_stats['top_alert_signals'][:3], 1):
+                symbol = signal['symbol']
+                price = signal['price']
+                funding_rate = signal['funding_rate'] * 100
+                oi_surge_ratio = signal.get('oi_surge_ratio', 1.0)
+                price_change = signal['price_change_percent_24h'] * 100
+                market_cap = signal.get('market_cap_estimate', 0)
+                if market_cap is None or market_cap <= 0:
+                    market_cap_str = "N/A"
+                elif market_cap >= 1e9:
+                    market_cap_str = f"${market_cap/1e9:.2f}B"
+                elif market_cap >= 1e6:
+                    market_cap_str = f"${market_cap/1e6:.1f}M"
+                else:
+                    market_cap_str = f"${market_cap/1e3:.0f}K"
+                message += (
+                    f"{idx}. {symbol}  价格: ${price:,.4f}  市值: {market_cap_str}  "
+                    f"资金费率: {funding_rate:.3f}%  OI激增: {oi_surge_ratio:.2f}x  "
+                    f"24h涨跌: {price_change:+.2f}%\n"
+                )
+        else:
+            message += "\n暂无OI异常警报信号\n"
 
         # 推荐卖出信号
         sell_signals = signals_df[signals_df['sell_signal']].copy()
