@@ -24,6 +24,13 @@
 - **手动维护**：支持手动填写正确的CoinMarketCap币种ID
 - **映射优先级**：映射文件中的配置优先于自动生成的映射
 
+### 🔄 智能重试机制
+- **指数退避算法**：失败后延迟时间逐渐增加，避免对服务器造成压力
+- **最大重试次数**：可配置的重试次数，默认3次
+- **API速率限制处理**：自动处理CoinMarketCap和CoinGecko的请求限制
+- **分批处理机制**：可配置批处理大小和批次间延迟
+- **智能错误处理**：针对不同HTTP状态码采用不同策略
+
 ## 币种映射管理
 
 ### 什么是币种映射？
@@ -108,6 +115,9 @@ python3 update_supply.py --all --force --save
 | `--symbols` | 指定要更新的币种列表 | `--symbols BTC ETH BNB` |
 | `--force` | 强制更新，覆盖现有数据 | `--force` |
 | `--save` | 保存到manual_supply.py文件 | `--save` |
+| `--batch-size` | 批处理大小（默认10） | `--batch-size 5` |
+| `--batch-delay` | 批次间延迟秒数（默认5） | `--batch-delay 10` |
+| `--max-retries` | 最大重试次数（默认3） | `--max-retries 5` |
 
 ## 数据源说明
 
@@ -168,6 +178,12 @@ MANUAL_SUPPLY = {
 2. **新币种更新**：`python3 update_supply.py --new --save`
 3. **重要币种更新**：`python3 update_supply.py --symbols BTC ETH BNB --force --save`
 
+### 重试机制优化策略
+1. **网络不稳定环境**：`python3 update_supply.py --new --save --batch-size 5 --max-retries 5`
+2. **API限制严格环境**：`python3 update_supply.py --new --save --batch-size 3 --batch-delay 10`
+3. **大批量更新**：`python3 update_supply.py --force-all --save --batch-size 15 --batch-delay 8`
+4. **高成功率要求**：`python3 update_supply.py --new --save --max-retries 5 --batch-delay 10`
+
 ### 币种映射维护
 1. **检查映射文件**：定期检查 `symbol_mapping.json` 中的映射关系
 2. **添加新映射**：为新币种添加正确的CoinMarketCap映射
@@ -183,8 +199,10 @@ MANUAL_SUPPLY = {
 ### 性能优化
 1. **分批更新**：对于大量币种，可以分批更新避免API限制
 2. **网络稳定**：确保网络连接稳定，避免请求超时
-3. **API限制**：工具已内置1秒延迟，避免触发API限制
+3. **API限制**：工具已内置智能速率限制处理，自动避免触发API限制
 4. **映射优化**：确保币种映射正确，减少API调用失败
+5. **重试机制**：指数退避算法自动处理网络异常和临时错误
+6. **批处理优化**：可配置批处理大小和延迟，平衡速度和稳定性
 
 ## 常见问题
 

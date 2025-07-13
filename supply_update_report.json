@@ -1,5 +1,5 @@
 {
-  "update_time": "2025-07-13 00:39:24",
+  "update_time": "2025-07-13 20:40:28",
   "total_symbols": 449,
   "updated_symbols": [
     {
@@ -7,12 +7,16 @@
       "supply": 1394527072
     },
     {
+      "symbol": "1MBABYDOGE",
+      "supply": 167358050269916400
+    },
+    {
       "symbol": "A",
-      "supply": 1577430595
+      "supply": 1577603836
     },
     {
       "symbol": "AAVE",
-      "supply": 15194046
+      "supply": 15194096
     },
     {
       "symbol": "ACE",
@@ -28,7 +32,7 @@
     },
     {
       "symbol": "ACX",
-      "supply": 493744927
+      "supply": 493830484
     },
     {
       "symbol": "ADA",
@@ -40,11 +44,11 @@
     },
     {
       "symbol": "AERO",
-      "supply": 851353670
+      "supply": 851331868
     },
     {
       "symbol": "AEVO",
-      "supply": 908778104
+      "supply": 908783778
     },
     {
       "symbol": "AGLD",
@@ -60,7 +64,7 @@
     },
     {
       "symbol": "AI16Z",
-      "supply": 1099998441
+      "supply": 1099998438
     },
     {
       "symbol": "AIOT",
@@ -80,7 +84,7 @@
     },
     {
       "symbol": "ALGO",
-      "supply": 8642525741
+      "supply": 8642698750
     },
     {
       "symbol": "ALICE",
@@ -116,7 +120,7 @@
     },
     {
       "symbol": "APT",
-      "supply": 645706508
+      "supply": 657454057
     },
     {
       "symbol": "AR",
@@ -132,7 +136,7 @@
     },
     {
       "symbol": "ARK",
-      "supply": 189915742
+      "supply": 189933736
     },
     {
       "symbol": "ARKM",
@@ -140,7 +144,7 @@
     },
     {
       "symbol": "ARPA",
-      "supply": 982174603
+      "supply": 1519586598
     },
     {
       "symbol": "ASR",
@@ -148,11 +152,11 @@
     },
     {
       "symbol": "ASTR",
-      "supply": 8133374172
+      "supply": 8133688974
     },
     {
       "symbol": "ATA",
-      "supply": 587792028
+      "supply": 125591440
     },
     {
       "symbol": "ATH",
@@ -164,7 +168,7 @@
     },
     {
       "symbol": "AUCTION",
-      "supply": 6090191
+      "supply": 6090197
     },
     {
       "symbol": "AVA",
@@ -180,11 +184,11 @@
     },
     {
       "symbol": "AXL",
-      "supply": 999584247
+      "supply": 1000118176
     },
     {
       "symbol": "AXS",
-      "supply": 166010513
+      "supply": 166025153
     },
     {
       "symbol": "B",
@@ -200,7 +204,7 @@
     },
     {
       "symbol": "BABY",
-      "supply": 2489260795
+      "supply": 2491458597
     },
     {
       "symbol": "BAKE",
@@ -220,7 +224,7 @@
     },
     {
       "symbol": "BAND",
-      "supply": 163363139
+      "supply": 163385170
     },
     {
       "symbol": "BANK",
@@ -232,11 +236,11 @@
     },
     {
       "symbol": "BB",
-      "supply": 632272604
+      "supply": 680802741
     },
     {
       "symbol": "BCH",
-      "supply": 19896303
+      "supply": 19896656
     },
     {
       "symbol": "BDXN",
@@ -248,11 +252,11 @@
     },
     {
       "symbol": "BERA",
-      "supply": 120474981
+      "supply": 120483242
     },
     {
       "symbol": "BICO",
-      "supply": 965381629
+      "supply": 965590174
     },
     {
       "symbol": "BID",
@@ -260,35 +264,31 @@
     },
     {
       "symbol": "BIGTIME",
-      "supply": 1947857000
+      "supply": 1948324412
     },
     {
       "symbol": "BIO",
-      "supply": 1586736897
+      "supply": 1588499059
     },
     {
       "symbol": "BLUR",
-      "supply": 2419592264
+      "supply": 2420801269
     },
     {
       "symbol": "BMT",
-      "supply": 366634175
+      "supply": 256180900
     },
     {
       "symbol": "BNB",
-      "supply": 139289378
+      "supply": 145887575
     },
     {
       "symbol": "BNT",
-      "supply": 115188101
-    },
-    {
-      "symbol": "BOME",
-      "supply": 68922488874
+      "supply": 114157994
     },
     {
       "symbol": "BR",
-      "supply": 210000000
+      "supply": 6284993699
     },
     {
       "symbol": "BRETT",
@@ -296,15 +296,15 @@
     },
     {
       "symbol": "BSV",
-      "supply": 19891328
+      "supply": 19891668
     },
     {
       "symbol": "BSW",
-      "supply": 665805535
+      "supply": 665764669
     },
     {
       "symbol": "BTC",
-      "supply": 19891371
+      "supply": 19891725
     },
     {
       "symbol": "BULLA",
@@ -316,7 +316,7 @@
     },
     {
       "symbol": "CAKE",
-      "supply": 345479680
+      "supply": 345513934
     },
     {
       "symbol": "CATI",
@@ -336,7 +336,7 @@
     },
     {
       "symbol": "CFX",
-      "supply": 5104353706
+      "supply": 5104942622
     },
     {
       "symbol": "CGPT",
@@ -344,7 +344,7 @@
     },
     {
       "symbol": "CHESS",
-      "supply": 201867352
+      "supply": 201878212
     },
     {
       "symbol": "CHILLGUY",
@@ -356,11 +356,11 @@
     },
     {
       "symbol": "CHZ",
-      "supply": 9714198761
+      "supply": 9715787237
     },
     {
       "symbol": "CKB",
-      "supply": 46866094651
+      "supply": 46871180896
     },
     {
       "symbol": "COMP",
@@ -368,7 +368,7 @@
     },
     {
       "symbol": "COOKIE",
-      "supply": 547679564
+      "supply": 547681975
     },
     {
       "symbol": "COS",
@@ -376,23 +376,23 @@
     },
     {
       "symbol": "COTI",
-      "supply": 2224476609
+      "supply": 2226261773
     },
     {
       "symbol": "COW",
-      "supply": 490352247
+      "supply": 490598338
     },
     {
       "symbol": "CRV",
-      "supply": 1363828392
+      "supply": 1364313625
     },
     {
       "symbol": "CTK",
-      "supply": 148011681
+      "supply": 148040906
     },
     {
       "symbol": "CTSI",
-      "supply": 873661769
+      "supply": 873760369
     },
     {
       "symbol": "CVC",
@@ -400,15 +400,15 @@
     },
     {
       "symbol": "CYBER",
-      "supply": 44862567
+      "supply": 43762567
     },
     {
       "symbol": "D",
-      "supply": 647874403
+      "supply": 159485193434
     },
     {
       "symbol": "DASH",
-      "supply": 12330957
+      "supply": 12331617
     },
     {
       "symbol": "DEEP",
@@ -448,7 +448,7 @@
     },
     {
       "symbol": "DOGE",
-      "supply": 150067006383
+      "supply": 150078246383
     },
     {
       "symbol": "DOGS",
@@ -464,11 +464,11 @@
     },
     {
       "symbol": "DOT",
-      "supply": 1596548418
+      "supply": 1596635621
     },
     {
       "symbol": "DRIFT",
-      "supply": 1449947
+      "supply": 342612099
     },
     {
       "symbol": "DUSK",
@@ -476,11 +476,11 @@
     },
     {
       "symbol": "DYDX",
-      "supply": 753297697
+      "supply": 753301092
     },
     {
       "symbol": "DYM",
-      "supply": 324511585
+      "supply": 325004615
     },
     {
       "symbol": "EDU",
@@ -488,7 +488,7 @@
     },
     {
       "symbol": "EGLD",
-      "supply": 28422749
+      "supply": 28426155
     },
     {
       "symbol": "EIGEN",
@@ -500,7 +500,7 @@
     },
     {
       "symbol": "ENJ",
-      "supply": 1859984027
+      "supply": 1860236433
     },
     {
       "symbol": "ENS",
@@ -516,55 +516,35 @@
     },
     {
       "symbol": "ETC",
-      "supply": 152678784
+      "supply": 152689633
     },
     {
       "symbol": "ETH",
-      "supply": 120715200
+      "supply": 120715090
     },
     {
       "symbol": "ETHFI",
       "supply": 374791803
     },
     {
-      "symbol": "ETHW",
-      "supply": 107818999
-    },
-    {
-      "symbol": "F",
-      "supply": 2120567377
-    },
-    {
-      "symbol": "FARTCOIN",
-      "supply": 999998256
-    },
-    {
-      "symbol": "FET",
-      "supply": 2390644410
-    },
-    {
-      "symbol": "FHE",
-      "supply": 249000000
-    },
-    {
       "symbol": "FIDA",
-      "supply": 990911456
+      "supply": 990911454
     },
     {
       "symbol": "FIL",
-      "supply": 682369282
+      "supply": 682400554
     },
     {
       "symbol": "FIO",
-      "supply": 814056835
+      "supply": 814106583
     },
     {
       "symbol": "FIS",
-      "supply": 115568049
+      "supply": 115569441
     },
     {
       "symbol": "FLM",
-      "supply": 552655896
+      "supply": 552675009
     },
     {
       "symbol": "FLOW",
@@ -572,7 +552,7 @@
     },
     {
       "symbol": "FLUX",
-      "supply": 387613409
+      "supply": 387657959
     },
     {
       "symbol": "FORM",
@@ -588,15 +568,15 @@
     },
     {
       "symbol": "FXS",
-      "supply": 89076129
+      "supply": 89080384
     },
     {
       "symbol": "G",
-      "supply": 150048356383
+      "supply": 9682540000
     },
     {
       "symbol": "GALA",
-      "supply": 45236021120
+      "supply": 45248465516
     },
     {
       "symbol": "GAS",
@@ -612,15 +592,15 @@
     },
     {
       "symbol": "GMT",
-      "supply": 2989262461
+      "supply": 2989811697
     },
     {
       "symbol": "GMX",
-      "supply": 10208152
+      "supply": 10208440
     },
     {
       "symbol": "GOAT",
-      "supply": 999992463
+      "supply": 999992460
     },
     {
       "symbol": "GPS",
@@ -660,39 +640,19 @@
     },
     {
       "symbol": "HEI",
-      "supply": 76705039
+      "supply": 76719897
     },
     {
       "symbol": "HFT",
-      "supply": 585816015
+      "supply": 586708863
     },
     {
       "symbol": "HIFI",
-      "supply": 141817546
+      "supply": 149506624
     },
     {
       "symbol": "HIGH",
-      "supply": 75157656
-    },
-    {
-      "symbol": "HIPPO",
-      "supply": 10000000000
-    },
-    {
-      "symbol": "HIVE",
-      "supply": 481399328
-    },
-    {
-      "symbol": "HMSTR",
-      "supply": 64375000000
-    },
-    {
-      "symbol": "HOME",
-      "supply": 2720000000
-    },
-    {
-      "symbol": "HOOK",
-      "supply": 248582064
+      "supply": 3818639
     },
     {
       "symbol": "HOT",
@@ -716,11 +676,11 @@
     },
     {
       "symbol": "ICP",
-      "supply": 535315601
+      "supply": 535318040
     },
     {
       "symbol": "ICX",
-      "supply": 1069712784
+      "supply": 1069768720
     },
     {
       "symbol": "ID",
@@ -732,7 +692,7 @@
     },
     {
       "symbol": "ILV",
-      "supply": 5912601
+      "supply": 5913289
     },
     {
       "symbol": "IMX",
@@ -740,7 +700,7 @@
     },
     {
       "symbol": "INIT",
-      "supply": 159352409
+      "supply": 159380947
     },
     {
       "symbol": "INJ",
@@ -756,7 +716,7 @@
     },
     {
       "symbol": "IOTA",
-      "supply": 3894067064
+      "supply": 3894834041
     },
     {
       "symbol": "IOTX",
@@ -764,7 +724,7 @@
     },
     {
       "symbol": "IP",
-      "supply": 286805187
+      "supply": 293818592
     },
     {
       "symbol": "JASMY",
@@ -784,7 +744,7 @@
     },
     {
       "symbol": "JTO",
-      "supply": 347558244
+      "supply": 347930064
     },
     {
       "symbol": "JUP",
@@ -792,7 +752,7 @@
     },
     {
       "symbol": "KAIA",
-      "supply": 6066131739
+      "supply": 6066819747
     },
     {
       "symbol": "KAITO",
@@ -800,7 +760,7 @@
     },
     {
       "symbol": "KAS",
-      "supply": 26437493605
+      "supply": 26441050743
     },
     {
       "symbol": "KAVA",
@@ -808,31 +768,15 @@
     },
     {
       "symbol": "KDA",
-      "supply": 323891406
+      "supply": 323936852
     },
     {
       "symbol": "KERNEL",
       "supply": 172044294
     },
     {
-      "symbol": "KMNO",
-      "supply": 2300000049
-    },
-    {
-      "symbol": "KNC",
-      "supply": 187441827
-    },
-    {
-      "symbol": "KOMA",
-      "supply": 493511799
-    },
-    {
-      "symbol": "KSM",
-      "supply": 16757309
-    },
-    {
       "symbol": "LA",
-      "supply": 193000000
+      "supply": 536154719
     },
     {
       "symbol": "LAYER",
@@ -852,7 +796,7 @@
     },
     {
       "symbol": "LISTA",
-      "supply": 214467637
+      "supply": 214444671
     },
     {
       "symbol": "LOKA",
@@ -860,7 +804,7 @@
     },
     {
       "symbol": "LPT",
-      "supply": 42311338
+      "supply": 42339358
     },
     {
       "symbol": "LQTY",
@@ -872,11 +816,11 @@
     },
     {
       "symbol": "LSK",
-      "supply": 196426782
+      "supply": 196428127
     },
     {
       "symbol": "LTC",
-      "supply": 76066451
+      "supply": 76069070
     },
     {
       "symbol": "LUMIA",
@@ -888,7 +832,7 @@
     },
     {
       "symbol": "MAGIC",
-      "supply": 307901403
+      "supply": 307901353
     },
     {
       "symbol": "MANA",
@@ -916,15 +860,15 @@
     },
     {
       "symbol": "ME",
-      "supply": 151104045
+      "supply": 151104024
     },
     {
       "symbol": "MELANIA",
-      "supply": 644997956
+      "supply": 819997955
     },
     {
       "symbol": "MEME",
-      "supply": 1579304706
+      "supply": 50414159912
     },
     {
       "symbol": "MEMEFI",
@@ -948,27 +892,11 @@
     },
     {
       "symbol": "MINA",
-      "supply": 1241584424
+      "supply": 1241640573
     },
     {
       "symbol": "MKR",
       "supply": 1886522614
-    },
-    {
-      "symbol": "MLN",
-      "supply": 2991676
-    },
-    {
-      "symbol": "MOCA",
-      "supply": 3397185184
-    },
-    {
-      "symbol": "MOODENG",
-      "supply": 989971791
-    },
-    {
-      "symbol": "MORPHO",
-      "supply": 319714295
     },
     {
       "symbol": "MOVE",
@@ -976,7 +904,7 @@
     },
     {
       "symbol": "MOVR",
-      "supply": 9766607
+      "supply": 9767460
     },
     {
       "symbol": "MTL",
@@ -996,7 +924,7 @@
     },
     {
       "symbol": "NEAR",
-      "supply": 1232571565
+      "supply": 1232693053
     },
     {
       "symbol": "NEIRO",
@@ -1020,7 +948,7 @@
     },
     {
       "symbol": "NKN",
-      "supply": 789895908
+      "supply": 789928942
     },
     {
       "symbol": "NMR",
@@ -1032,7 +960,7 @@
     },
     {
       "symbol": "NTRN",
-      "supply": 600302476
+      "supply": 600302105
     },
     {
       "symbol": "NXPC",
@@ -1044,11 +972,11 @@
     },
     {
       "symbol": "OG",
-      "supply": 150048356383
+      "supply": 4300000
     },
     {
       "symbol": "OGN",
-      "supply": 697939758
+      "supply": 698013405
     },
     {
       "symbol": "OL",
@@ -1056,7 +984,7 @@
     },
     {
       "symbol": "OM",
-      "supply": 986202511
+      "supply": 986321305
     },
     {
       "symbol": "OMNI",
@@ -1068,7 +996,7 @@
     },
     {
       "symbol": "ONE",
-      "supply": 14653143487
+      "supply": 14653896473
     },
     {
       "symbol": "ONG",
@@ -1092,23 +1020,7 @@
     },
     {
       "symbol": "OXT",
-      "supply": 997214634
-    },
-    {
-      "symbol": "PARTI",
-      "supply": 233000000
-    },
-    {
-      "symbol": "PAXG",
-      "supply": 280171
-    },
-    {
-      "symbol": "PENDLE",
-      "supply": 164673387
-    },
-    {
-      "symbol": "PENGU",
-      "supply": 62860396090
+      "supply": 591544728
     },
     {
       "symbol": "PEOPLE",
@@ -1120,11 +1032,11 @@
     },
     {
       "symbol": "PHA",
-      "supply": 802542228
+      "supply": 802648238
     },
     {
       "symbol": "PHB",
-      "supply": 57175712
+      "supply": 57183681
     },
     {
       "symbol": "PIPPIN",
@@ -1140,7 +1052,7 @@
     },
     {
       "symbol": "PNUT",
-      "supply": 999852092
+      "supply": 999852090
     },
     {
       "symbol": "POL",
@@ -1164,11 +1076,11 @@
     },
     {
       "symbol": "PORTAL",
-      "supply": 572997752
+      "supply": 573033119
     },
     {
       "symbol": "POWR",
-      "supply": 529761884
+      "supply": 567717632
     },
     {
       "symbol": "PROM",
@@ -1196,7 +1108,7 @@
     },
     {
       "symbol": "PYTH",
-      "supply": 5749985719
+      "supply": 5749985704
     },
     {
       "symbol": "QNT",
@@ -1204,7 +1116,7 @@
     },
     {
       "symbol": "QTUM",
-      "supply": 105722421
+      "supply": 105723549
     },
     {
       "symbol": "QUICK",
@@ -1232,19 +1144,7 @@
     },
     {
       "symbol": "RESOLV",
-      "supply": 155750000
-    },
-    {
-      "symbol": "REZ",
-      "supply": 3136130016
-    },
-    {
-      "symbol": "RIF",
-      "supply": 1000000000
-    },
-    {
-      "symbol": "RLC",
-      "supply": 72382548
+      "supply": 259368945
     },
     {
       "symbol": "RONIN",
@@ -1252,7 +1152,7 @@
     },
     {
       "symbol": "ROSE",
-      "supply": 7402038122
+      "supply": 7402153852
     },
     {
       "symbol": "RPL",
@@ -1264,11 +1164,11 @@
     },
     {
       "symbol": "RUNE",
-      "supply": 351476454
+      "supply": 351474613
     },
     {
       "symbol": "RVN",
-      "supply": 15355813730
+      "supply": 15358783715
     },
     {
       "symbol": "S",
@@ -1280,7 +1180,7 @@
     },
     {
       "symbol": "SAGA",
-      "supply": 270151751
+      "supply": 270181364
     },
     {
       "symbol": "SAHARA",
@@ -1289,6 +1189,22 @@
     {
       "symbol": "SAND",
       "supply": 2573289190
+    },
+    {
+      "symbol": "SANTOS",
+      "supply": 11546061
+    },
+    {
+      "symbol": "SCR",
+      "supply": 190000000
+    },
+    {
+      "symbol": "SCRT",
+      "supply": 312649569
+    },
+    {
+      "symbol": "SEI",
+      "supply": 5556944444
     },
     {
       "symbol": "SFP",
@@ -1328,7 +1244,7 @@
     },
     {
       "symbol": "SOL",
-      "supply": 536031241
+      "supply": 536154754
     },
     {
       "symbol": "SOLV",
@@ -1352,31 +1268,11 @@
     },
     {
       "symbol": "SPK",
-      "supply": 977205963
+      "supply": 977908066
     },
     {
       "symbol": "SPX",
       "supply": 930993090
-    },
-    {
-      "symbol": "SQD",
-      "supply": 689592007
-    },
-    {
-      "symbol": "SSV",
-      "supply": 13271822
-    },
-    {
-      "symbol": "STEEM",
-      "supply": 518366410
-    },
-    {
-      "symbol": "STG",
-      "supply": 204338417
-    },
-    {
-      "symbol": "STO",
-      "supply": 225333333
     },
     {
       "symbol": "STORJ",
@@ -1388,7 +1284,7 @@
     },
     {
       "symbol": "STX",
-      "supply": 1534127826
+      "supply": 1534247720
     },
     {
       "symbol": "SUI",
@@ -1412,15 +1308,19 @@
     },
     {
       "symbol": "SWELL",
-      "supply": 121323
+      "supply": 2421774361
     },
     {
       "symbol": "SXP",
-      "supply": 648702944
+      "supply": 649191416
+    },
+    {
+      "symbol": "SXT",
+      "supply": 1400000000
     },
     {
       "symbol": "SYN",
-      "supply": 182041692
+      "supply": 182088877
     },
     {
       "symbol": "SYRUP",
@@ -1428,7 +1328,7 @@
     },
     {
       "symbol": "SYS",
-      "supply": 823304971
+      "supply": 823359221
     },
     {
       "symbol": "T",
@@ -1440,11 +1340,11 @@
     },
     {
       "symbol": "TAO",
-      "supply": 9387445
+      "supply": 9401838
     },
     {
       "symbol": "THE",
-      "supply": 106926872
+      "supply": 106926420
     },
     {
       "symbol": "THETA",
@@ -1452,11 +1352,11 @@
     },
     {
       "symbol": "TIA",
-      "supply": 706473578
+      "supply": 707680869
     },
     {
       "symbol": "TLM",
-      "supply": 5856032652
+      "supply": 5856821179
     },
     {
       "symbol": "TNSR",
@@ -1468,11 +1368,11 @@
     },
     {
       "symbol": "TON",
-      "supply": 2469462080
+      "supply": 2469533877
     },
     {
       "symbol": "TRB",
-      "supply": 2683746
+      "supply": 2683912
     },
     {
       "symbol": "TRU",
@@ -1484,7 +1384,7 @@
     },
     {
       "symbol": "TRX",
-      "supply": 94762067455
+      "supply": 94761792676
     },
     {
       "symbol": "TST",
@@ -1496,7 +1396,7 @@
     },
     {
       "symbol": "TUT",
-      "supply": 838079863
+      "supply": 2826501175
     },
     {
       "symbol": "TWT",
@@ -1504,23 +1404,11 @@
     },
     {
       "symbol": "UMA",
-      "supply": 88248589
-    },
-    {
-      "symbol": "UNI",
-      "supply": 628739836
-    },
-    {
-      "symbol": "USDC",
-      "supply": 63633149401
-    },
-    {
-      "symbol": "USTC",
-      "supply": 5593834881
+      "supply": 88254359
     },
     {
       "symbol": "USUAL",
-      "supply": 1064655063
+      "supply": 586915935
     },
     {
       "symbol": "UXLINK",
@@ -1536,7 +1424,7 @@
     },
     {
       "symbol": "VELODROME",
-      "supply": 966293015
+      "supply": 966271874
     },
     {
       "symbol": "VET",
@@ -1544,7 +1432,7 @@
     },
     {
       "symbol": "VIC",
-      "supply": 33165585
+      "supply": 121707974
     },
     {
       "symbol": "VINE",
@@ -1560,15 +1448,15 @@
     },
     {
       "symbol": "VTHO",
-      "supply": 91649213091
+      "supply": 91680585193
     },
     {
       "symbol": "VVV",
-      "supply": 32092895
+      "supply": 32111545
     },
     {
       "symbol": "W",
-      "supply": 4665793792
+      "supply": 4667250538
     },
     {
       "symbol": "WAL",
@@ -1576,7 +1464,7 @@
     },
     {
       "symbol": "WAXP",
-      "supply": 4416826501
+      "supply": 4417316812
     },
     {
       "symbol": "WCT",
@@ -1584,7 +1472,7 @@
     },
     {
       "symbol": "WIF",
-      "supply": 998840199
+      "supply": 998840197
     },
     {
       "symbol": "WLD",
@@ -1596,7 +1484,7 @@
     },
     {
       "symbol": "XAI",
-      "supply": 1679109089
+      "supply": 1679407759
     },
     {
       "symbol": "XCN",
@@ -1604,7 +1492,7 @@
     },
     {
       "symbol": "XLM",
-      "supply": 31056793182
+      "supply": 31056778138
     },
     {
       "symbol": "XMR",
@@ -1616,7 +1504,7 @@
     },
     {
       "symbol": "XTZ",
-      "supply": 1050580837
+      "supply": 1050691402
     },
     {
       "symbol": "XVG",
@@ -1624,7 +1512,7 @@
     },
     {
       "symbol": "XVS",
-      "supply": 16197495
+      "supply": 16198122
     },
     {
       "symbol": "YFI",
@@ -1632,39 +1520,19 @@
     },
     {
       "symbol": "YGG",
-      "supply": 528988251
+      "supply": 529000463
     },
     {
       "symbol": "ZEC",
-      "supply": 16751161
+      "supply": 16753359
     },
     {
       "symbol": "ZEN",
-      "supply": 16128965
+      "supply": 16130456
     },
     {
       "symbol": "ZEREBRO",
-      "supply": 999956432
-    },
-    {
-      "symbol": "ZETA",
-      "supply": 926187500
-    },
-    {
-      "symbol": "ZIL",
-      "supply": 19482583441
-    },
-    {
-      "symbol": "ZK",
-      "supply": 7185123219
-    },
-    {
-      "symbol": "ZKJ",
-      "supply": 292861111
-    },
-    {
-      "symbol": "ZRO",
-      "supply": 161123289
+      "supply": 999956078
     },
     {
       "symbol": "ZRX",
@@ -1672,7 +1540,15 @@
     },
     {
       "symbol": "1000000BOB",
-      "supply": 456830008
+      "supply": 420690000000000
+    },
+    {
+      "symbol": "1000000MOG",
+      "supply": 390567526433216
+    },
+    {
+      "symbol": "1000CAT",
+      "supply": 7295217235201
     },
     {
       "symbol": "1000CHEEMS",
@@ -1680,11 +1556,11 @@
     },
     {
       "symbol": "1000FLOKI",
-      "supply": 9541306620100
+      "supply": 9541306361506
     },
     {
       "symbol": "1000LUNC",
-      "supply": 5472579922156
+      "supply": 5475717268585
     },
     {
       "symbol": "1000RATS",
@@ -1700,11 +1576,11 @@
     },
     {
       "symbol": "1000XEC",
-      "supply": 19891295297582
+      "supply": 19891732797582
     },
     {
       "symbol": "1000SHIB",
-      "supply": 589247004212670
+      "supply": 589246999887068
     },
     {
       "symbol": "1000PEPE",
@@ -1712,7 +1588,7 @@
     },
     {
       "symbol": "1000BONK",
-      "supply": 80826369070704
+      "supply": 80842042423450
     },
     {
       "symbol": "1000X",
@@ -1732,22 +1608,53 @@
     }
   ],
   "failed_symbols": [
-    "1MBABYDOGE",
     "AVAAI",
     "BEAMX",
+    "BOME",
     "BROCCOLI714",
     "BROCCOLIF3B",
     "BTCDOM",
     "DODOX",
+    "ETHW",
+    "F",
+    "FARTCOIN",
+    "FET",
+    "FHE",
+    "HIPPO",
+    "HIVE",
+    "HMSTR",
+    "HOME",
+    "HOOK",
+    "KMNO",
+    "KNC",
+    "KOMA",
+    "KSM",
     "LUNA2",
+    "MLN",
+    "MOCA",
+    "MOODENG",
+    "MORPHO",
     "NEIROETH",
+    "PARTI",
+    "PAXG",
+    "PENDLE",
+    "PENGU",
     "RAYSOL",
-    "SANTOS",
-    "SCR",
-    "SCRT",
-    "SEI",
-    "SXT",
-    "1000000MOG",
-    "1000CAT"
+    "REZ",
+    "RIF",
+    "RLC",
+    "SQD",
+    "SSV",
+    "STEEM",
+    "STG",
+    "STO",
+    "UNI",
+    "USDC",
+    "USTC",
+    "ZETA",
+    "ZIL",
+    "ZK",
+    "ZKJ",
+    "ZRO"
   ]
 }
