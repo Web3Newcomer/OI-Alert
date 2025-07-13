@@ -5,6 +5,18 @@
       "openInterest": 1981875.835,
       "timestamp": 1752337340566,
       "collect_time": "2025-07-13T00:22:28.237142"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "openInterest": 1967892.681,
+      "timestamp": 1752364839615,
+      "collect_time": "2025-07-13T08:00:43.135659"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "openInterest": 2009761.874,
+      "timestamp": 1752393626928,
+      "collect_time": "2025-07-13T16:00:33.447631"
     }
   ],
   "BTC": [
@@ -13,6 +25,18 @@
       "openInterest": 88029.723,
       "timestamp": 1752337346392,
       "collect_time": "2025-07-13T00:22:28.763556"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "openInterest": 88016.213,
+      "timestamp": 1752364838660,
+      "collect_time": "2025-07-13T08:00:43.367594"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "openInterest": 88410.494,
+      "timestamp": 1752393631198,
+      "collect_time": "2025-07-13T16:00:33.745596"
     }
   ],
   "XRP": [
@@ -21,6 +45,18 @@
       "openInterest": 379293302.2,
       "timestamp": 1752337344603,
       "collect_time": "2025-07-13T00:22:29.789658"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "openInterest": 369395572.4,
+      "timestamp": 1752364838545,
+      "collect_time": "2025-07-13T08:00:43.598935"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "openInterest": 373857033.0,
+      "timestamp": 1752393631372,
+      "collect_time": "2025-07-13T16:00:33.981187"
     }
   ],
   "SOL": [
@@ -29,6 +65,18 @@
       "openInterest": 9089936.57,
       "timestamp": 1752337346328,
       "collect_time": "2025-07-13T00:22:30.641782"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "openInterest": 9070192.91,
+      "timestamp": 1752364839946,
+      "collect_time": "2025-07-13T08:00:43.834839"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "openInterest": 9073724.33,
+      "timestamp": 1752393631991,
+      "collect_time": "2025-07-13T16:00:34.215611"
     }
   ],
   "DOGE": [
@@ -37,6 +85,18 @@
       "openInterest": 2100051096.0,
       "timestamp": 1752337344785,
       "collect_time": "2025-07-13T00:22:31.423170"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "openInterest": 2094556381.0,
+      "timestamp": 1752364838665,
+      "collect_time": "2025-07-13T08:00:44.303586"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "openInterest": 2076588206.0,
+      "timestamp": 1752393630063,
+      "collect_time": "2025-07-13T16:00:35.154106"
     }
   ],
   "1000PEPE": [
@@ -45,6 +105,18 @@
       "openInterest": 23106524543.0,
       "timestamp": 1752337349033,
       "collect_time": "2025-07-13T00:22:32.775634"
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "openInterest": 23120024371.0,
+      "timestamp": 1752364842955,
+      "collect_time": "2025-07-13T08:00:44.997114"
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "openInterest": 22345114103.0,
+      "timestamp": 1752393632104,
+      "collect_time": "2025-07-13T16:00:35.484837"
     }
   ],
   "M": [
@@ -53,6 +125,18 @@
       "openInterest": 33849225.0,
       "timestamp": 1752337348823,
       "collect_time": "2025-07-13T00:22:33.427827"
+    },
+    {
+      "symbol": "MUSDT",
+      "openInterest": 31145641.0,
+      "timestamp": 1752364839918,
+      "collect_time": "2025-07-13T08:00:45.510075"
+    },
+    {
+      "symbol": "MUSDT",
+      "openInterest": 33134777.0,
+      "timestamp": 1752393632056,
+      "collect_time": "2025-07-13T16:00:37.159484"
     }
   ],
   "XLM": [
@@ -61,6 +145,18 @@
       "openInterest": 205982257.0,
       "timestamp": 1752337346570,
       "collect_time": "2025-07-13T00:22:33.812645"
+    },
+    {
+      "symbol": "XLMUSDT",
+      "openInterest": 202859763.0,
+      "timestamp": 1752364839702,
+      "collect_time": "2025-07-13T08:00:44.534787"
+    },
+    {
+      "symbol": "XLMUSDT",
+      "openInterest": 225889023.0,
+      "timestamp": 1752393631752,
+      "collect_time": "2025-07-13T16:00:34.917305"
     }
   ],
   "KNC": [
@@ -69,6 +165,18 @@
       "openInterest": 35539520.0,
       "timestamp": 1752337352630,
       "collect_time": "2025-07-13T00:22:34.540229"
+    },
+    {
+      "symbol": "KNCUSDT",
+      "openInterest": 33241507.0,
+      "timestamp": 1752364839915,
+      "collect_time": "2025-07-13T08:00:44.069281"
+    },
+    {
+      "symbol": "KNCUSDT",
+      "openInterest": 30544990.0,
+      "timestamp": 1752393627640,
+      "collect_time": "2025-07-13T16:00:34.684388"
     }
   ],
   "ADA": [
@@ -77,6 +185,18 @@
       "openInterest": 267605311.0,
       "timestamp": 1752337350490,
       "collect_time": "2025-07-13T00:22:35.011025"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "openInterest": 266320714.0,
+      "timestamp": 1752364841538,
+      "collect_time": "2025-07-13T08:00:45.968257"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "openInterest": 263995920.0,
+      "timestamp": 1752393631718,
+      "collect_time": "2025-07-13T16:00:36.692990"
     }
   ],
   "PENGU": [
@@ -85,6 +205,18 @@
       "openInterest": 2811044701.0,
       "timestamp": 1752337351322,
       "collect_time": "2025-07-13T00:22:35.588463"
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "openInterest": 2720442668.0,
+      "timestamp": 1752364840594,
+      "collect_time": "2025-07-13T08:00:46.434637"
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "openInterest": 2760653464.0,
+      "timestamp": 1752393631137,
+      "collect_time": "2025-07-13T16:00:37.623854"
     }
   ],
   "HYPER": [
@@ -93,6 +225,18 @@
       "openInterest": 72620402.0,
       "timestamp": 1752337353974,
       "collect_time": "2025-07-13T00:22:35.865262"
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "openInterest": 67586115.0,
+      "timestamp": 1752364843711,
+      "collect_time": "2025-07-13T08:00:45.738736"
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "openInterest": 70802835.0,
+      "timestamp": 1752393631236,
+      "collect_time": "2025-07-13T16:00:36.457751"
     }
   ],
   "SUI": [
@@ -101,6 +245,18 @@
       "openInterest": 78935792.0,
       "timestamp": 1752337352458,
       "collect_time": "2025-07-13T00:22:36.316161"
+    },
+    {
+      "symbol": "SUIUSDT",
+      "openInterest": 78648836.9,
+      "timestamp": 1752364841970,
+      "collect_time": "2025-07-13T08:00:46.204291"
+    },
+    {
+      "symbol": "SUIUSDT",
+      "openInterest": 78211795.7,
+      "timestamp": 1752393635622,
+      "collect_time": "2025-07-13T16:00:36.925971"
     }
   ],
   "PUMP": [
@@ -109,6 +265,18 @@
       "openInterest": 19081770111.0,
       "timestamp": 1752337352770,
       "collect_time": "2025-07-13T00:22:36.643512"
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "openInterest": 20578664101.0,
+      "timestamp": 1752364839960,
+      "collect_time": "2025-07-13T08:00:44.767326"
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "openInterest": 21643711793.0,
+      "timestamp": 1752393632074,
+      "collect_time": "2025-07-13T16:00:34.451820"
     }
   ],
   "BANANAS31": [
@@ -117,6 +285,18 @@
       "openInterest": 3559913488.0,
       "timestamp": 1752337351350,
       "collect_time": "2025-07-13T00:22:37.031416"
+    },
+    {
+      "symbol": "BANANAS31USDT",
+      "openInterest": 3453783070.0,
+      "timestamp": 1752364840675,
+      "collect_time": "2025-07-13T08:00:46.668490"
+    },
+    {
+      "symbol": "BANANAS31USDT",
+      "openInterest": 3174444935.0,
+      "timestamp": 1752393632219,
+      "collect_time": "2025-07-13T16:00:36.222423"
     }
   ],
   "H": [
@@ -125,6 +305,18 @@
       "openInterest": 239113129.0,
       "timestamp": 1752337352571,
       "collect_time": "2025-07-13T00:22:37.317721"
+    },
+    {
+      "symbol": "HUSDT",
+      "openInterest": 222262507.0,
+      "timestamp": 1752364843626,
+      "collect_time": "2025-07-13T08:00:46.905012"
+    },
+    {
+      "symbol": "HUSDT",
+      "openInterest": 229204379.0,
+      "timestamp": 1752393635360,
+      "collect_time": "2025-07-13T16:00:38.349006"
     }
   ],
   "1000BONK": [
@@ -133,6 +325,18 @@
       "openInterest": 3306282223.0,
       "timestamp": 1752337354864,
       "collect_time": "2025-07-13T00:22:37.809869"
+    },
+    {
+      "symbol": "1000BONKUSDT",
+      "openInterest": 3503256085.0,
+      "timestamp": 1752364843160,
+      "collect_time": "2025-07-13T08:00:45.230135"
+    },
+    {
+      "symbol": "1000BONKUSDT",
+      "openInterest": 3362640233.0,
+      "timestamp": 1752393631458,
+      "collect_time": "2025-07-13T16:00:35.853419"
     }
   ],
   "WIF": [
@@ -141,6 +345,18 @@
       "openInterest": 100154517.4,
       "timestamp": 1752337351111,
       "collect_time": "2025-07-13T00:22:38.387354"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "openInterest": 93814177.8,
+      "timestamp": 1752364843010,
+      "collect_time": "2025-07-13T08:00:47.375735"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "openInterest": 94364531.0,
+      "timestamp": 1752393630887,
+      "collect_time": "2025-07-13T16:00:37.858435"
     }
   ],
   "FARTCOIN": [
@@ -149,6 +365,18 @@
       "openInterest": 88395741.6,
       "timestamp": 1752337357234,
       "collect_time": "2025-07-13T00:22:38.713658"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "openInterest": 85467537.8,
+      "timestamp": 1752364844505,
+      "collect_time": "2025-07-13T08:00:47.140889"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "openInterest": 86067363.3,
+      "timestamp": 1752393631951,
+      "collect_time": "2025-07-13T16:00:37.391852"
     }
   ],
   "TRUMP": [
@@ -157,6 +385,18 @@
       "openInterest": 12130920.62,
       "timestamp": 1752337353096,
       "collect_time": "2025-07-13T00:22:38.995902"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "openInterest": 12295695.68,
+      "timestamp": 1752364842973,
+      "collect_time": "2025-07-13T08:00:48.314075"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "openInterest": 12263952.46,
+      "timestamp": 1752393631547,
+      "collect_time": "2025-07-13T16:00:39.053416"
     }
   ],
   "ENA": [
@@ -165,6 +405,18 @@
       "openInterest": 411949468.0,
       "timestamp": 1752337354659,
       "collect_time": "2025-07-13T00:22:39.286258"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "openInterest": 413903217.0,
+      "timestamp": 1752364843850,
+      "collect_time": "2025-07-13T08:00:47.843489"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "openInterest": 414578193.0,
+      "timestamp": 1752393632472,
+      "collect_time": "2025-07-13T16:00:38.108994"
     }
   ],
   "AAVE": [
@@ -173,6 +425,18 @@
       "openInterest": 558486.9,
       "timestamp": 1752337352702,
       "collect_time": "2025-07-13T00:22:39.600757"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "openInterest": 564856.0,
+      "timestamp": 1752364843465,
+      "collect_time": "2025-07-13T08:00:48.077631"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "openInterest": 568083.2,
+      "timestamp": 1752393631799,
+      "collect_time": "2025-07-13T16:00:38.822813"
     }
   ],
   "BNB": [
@@ -181,6 +445,18 @@
       "openInterest": 496589.97,
       "timestamp": 1752337356030,
       "collect_time": "2025-07-13T00:22:40.031219"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "openInterest": 492665.22,
+      "timestamp": 1752364846296,
+      "collect_time": "2025-07-13T08:00:49.021633"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "openInterest": 493760.86,
+      "timestamp": 1752393635306,
+      "collect_time": "2025-07-13T16:00:40.505574"
     }
   ],
   "UNI": [
@@ -189,6 +465,18 @@
       "openInterest": 22303676.0,
       "timestamp": 1752337354722,
       "collect_time": "2025-07-13T00:22:40.318496"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "openInterest": 22047602.0,
+      "timestamp": 1752364842390,
+      "collect_time": "2025-07-13T08:00:48.553612"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "openInterest": 21933894.0,
+      "timestamp": 1752393635162,
+      "collect_time": "2025-07-13T16:00:40.039920"
     }
   ],
   "LTC": [
@@ -197,6 +485,18 @@
       "openInterest": 1749222.119,
       "timestamp": 1752337356030,
       "collect_time": "2025-07-13T00:22:40.794770"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "openInterest": 1734102.094,
+      "timestamp": 1752364843619,
+      "collect_time": "2025-07-13T08:00:49.255904"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "openInterest": 1712292.622,
+      "timestamp": 1752393634454,
+      "collect_time": "2025-07-13T16:00:41.443158"
     }
   ],
   "ARK": [
@@ -205,6 +505,18 @@
       "openInterest": 16302728.0,
       "timestamp": 1752337358857,
       "collect_time": "2025-07-13T00:22:41.085703"
+    },
+    {
+      "symbol": "ARKUSDT",
+      "openInterest": 16708098.0,
+      "timestamp": 1752364843544,
+      "collect_time": "2025-07-13T08:00:47.609045"
+    },
+    {
+      "symbol": "ARKUSDT",
+      "openInterest": 16815936.0,
+      "timestamp": 1752393633239,
+      "collect_time": "2025-07-13T16:00:40.273773"
     }
   ],
   "LINK": [
@@ -213,6 +525,18 @@
       "openInterest": 7717705.32,
       "timestamp": 1752337356079,
       "collect_time": "2025-07-13T00:22:41.427946"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "openInterest": 7573036.24,
+      "timestamp": 1752364846666,
+      "collect_time": "2025-07-13T08:00:49.722362"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "openInterest": 7599793.28,
+      "timestamp": 1752393637958,
+      "collect_time": "2025-07-13T16:00:40.739268"
     }
   ],
   "AVAX": [
@@ -221,6 +545,18 @@
       "openInterest": 5474788.0,
       "timestamp": 1752337358346,
       "collect_time": "2025-07-13T00:22:42.374928"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "openInterest": 5471392.0,
+      "timestamp": 1752364846892,
+      "collect_time": "2025-07-13T08:00:49.490592"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "openInterest": 5485043.0,
+      "timestamp": 1752393635944,
+      "collect_time": "2025-07-13T16:00:39.524079"
     }
   ],
   "FUN": [
@@ -229,6 +565,18 @@
       "openInterest": 1388076390.0,
       "timestamp": 1752337357368,
       "collect_time": "2025-07-13T00:22:42.912491"
+    },
+    {
+      "symbol": "FUNUSDT",
+      "openInterest": 1401716084.0,
+      "timestamp": 1752364843331,
+      "collect_time": "2025-07-13T08:00:48.787817"
+    },
+    {
+      "symbol": "FUNUSDT",
+      "openInterest": 1350695632.0,
+      "timestamp": 1752393636130,
+      "collect_time": "2025-07-13T16:00:41.210463"
     }
   ],
   "OMNI": [
@@ -237,6 +585,18 @@
       "openInterest": 3692019.8,
       "timestamp": 1752337356768,
       "collect_time": "2025-07-13T00:22:43.371650"
+    },
+    {
+      "symbol": "OMNIUSDT",
+      "openInterest": 3362736.35,
+      "timestamp": 1752364846848,
+      "collect_time": "2025-07-13T08:00:51.591858"
+    },
+    {
+      "symbol": "OMNIUSDT",
+      "openInterest": 3514811.25,
+      "timestamp": 1752393639354,
+      "collect_time": "2025-07-13T16:00:44.514786"
     }
   ],
   "DOT": [
@@ -245,6 +605,18 @@
       "openInterest": 19477416.3,
       "timestamp": 1752337360602,
       "collect_time": "2025-07-13T00:22:43.995868"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "openInterest": 19302367.4,
+      "timestamp": 1752364847573,
+      "collect_time": "2025-07-13T08:00:50.424076"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "openInterest": 19161650.5,
+      "timestamp": 1752393635445,
+      "collect_time": "2025-07-13T16:00:42.390146"
     }
   ],
   "SEI": [
@@ -253,6 +625,18 @@
       "openInterest": 216770922.0,
       "timestamp": 1752337360296,
       "collect_time": "2025-07-13T00:22:44.960227"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "openInterest": 212721284.0,
+      "timestamp": 1752364840914,
+      "collect_time": "2025-07-13T08:00:50.188064"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "openInterest": 210871098.0,
+      "timestamp": 1752393639868,
+      "collect_time": "2025-07-13T16:00:41.675358"
     }
   ],
   "BCH": [
@@ -261,6 +645,18 @@
       "openInterest": 280406.72,
       "timestamp": 1752337361394,
       "collect_time": "2025-07-13T00:22:45.355729"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "openInterest": 280945.513,
+      "timestamp": 1752364846534,
+      "collect_time": "2025-07-13T08:00:50.661507"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "openInterest": 281031.214,
+      "timestamp": 1752393635816,
+      "collect_time": "2025-07-13T16:00:43.347369"
     }
   ],
   "HYPE": [
@@ -269,6 +665,18 @@
       "openInterest": 2550538.76,
       "timestamp": 1752337362600,
       "collect_time": "2025-07-13T00:22:46.244876"
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "openInterest": 2542122.52,
+      "timestamp": 1752364846426,
+      "collect_time": "2025-07-13T08:00:49.954349"
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "openInterest": 2621171.09,
+      "timestamp": 1752393632835,
+      "collect_time": "2025-07-13T16:00:39.760508"
     }
   ],
   "HBAR": [
@@ -277,6 +685,18 @@
       "openInterest": 236529462.0,
       "timestamp": 1752337363791,
       "collect_time": "2025-07-13T00:22:47.293558"
+    },
+    {
+      "symbol": "HBARUSDT",
+      "openInterest": 233749359.0,
+      "timestamp": 1752364847850,
+      "collect_time": "2025-07-13T08:00:50.893678"
+    },
+    {
+      "symbol": "HBARUSDT",
+      "openInterest": 269194981.0,
+      "timestamp": 1752393632106,
+      "collect_time": "2025-07-13T16:00:38.585519"
     }
   ],
   "TRX": [
@@ -285,6 +705,18 @@
       "openInterest": 416336420.0,
       "timestamp": 1752337362221,
       "collect_time": "2025-07-13T00:22:48.267250"
+    },
+    {
+      "symbol": "TRXUSDT",
+      "openInterest": 424353841.0,
+      "timestamp": 1752364841583,
+      "collect_time": "2025-07-13T08:00:51.123668"
+    },
+    {
+      "symbol": "TRXUSDT",
+      "openInterest": 413279550.0,
+      "timestamp": 1752393638473,
+      "collect_time": "2025-07-13T16:00:42.631362"
     }
   ],
   "1000SHIB": [
@@ -293,6 +725,18 @@
       "openInterest": 4185731749.0,
       "timestamp": 1752337365628,
       "collect_time": "2025-07-13T00:22:48.845865"
+    },
+    {
+      "symbol": "1000SHIBUSDT",
+      "openInterest": 4157580361.0,
+      "timestamp": 1752364851043,
+      "collect_time": "2025-07-13T08:00:52.527228"
+    },
+    {
+      "symbol": "1000SHIBUSDT",
+      "openInterest": 4261245536.0,
+      "timestamp": 1752393638561,
+      "collect_time": "2025-07-13T16:00:44.282072"
     }
   ],
   "PNUT": [
@@ -301,6 +745,18 @@
       "openInterest": 138990634.0,
       "timestamp": 1752337364431,
       "collect_time": "2025-07-13T00:22:49.454127"
+    },
+    {
+      "symbol": "PNUTUSDT",
+      "openInterest": 140158603.0,
+      "timestamp": 1752364847446,
+      "collect_time": "2025-07-13T08:00:51.826808"
+    },
+    {
+      "symbol": "PNUTUSDT",
+      "openInterest": 141529137.0,
+      "timestamp": 1752393639825,
+      "collect_time": "2025-07-13T16:00:43.106454"
     }
   ],
   "NEAR": [
@@ -309,6 +765,18 @@
       "openInterest": 24074429.0,
       "timestamp": 1752337367438,
       "collect_time": "2025-07-13T00:22:50.301173"
+    },
+    {
+      "symbol": "NEARUSDT",
+      "openInterest": 23895442.0,
+      "timestamp": 1752364846908,
+      "collect_time": "2025-07-13T08:00:52.061668"
+    },
+    {
+      "symbol": "NEARUSDT",
+      "openInterest": 23479965.0,
+      "timestamp": 1752393637295,
+      "collect_time": "2025-07-13T16:00:44.751381"
     }
   ],
   "WLD": [
@@ -317,6 +785,18 @@
       "openInterest": 56941357.0,
       "timestamp": 1752337364462,
       "collect_time": "2025-07-13T00:22:51.434282"
+    },
+    {
+      "symbol": "WLDUSDT",
+      "openInterest": 55972747.0,
+      "timestamp": 1752364846893,
+      "collect_time": "2025-07-13T08:00:52.296576"
+    },
+    {
+      "symbol": "WLDUSDT",
+      "openInterest": 55728107.0,
+      "timestamp": 1752393638996,
+      "collect_time": "2025-07-13T16:00:43.582945"
     }
   ],
   "ARB": [
@@ -325,6 +805,18 @@
       "openInterest": 141628776.3,
       "timestamp": 1752337366008,
       "collect_time": "2025-07-13T00:22:52.247434"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "openInterest": 141421349.4,
+      "timestamp": 1752364846749,
+      "collect_time": "2025-07-13T08:00:52.990477"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "openInterest": 140024328.6,
+      "timestamp": 1752393638754,
+      "collect_time": "2025-07-13T16:00:43.815444"
     }
   ],
   "TIA": [
@@ -333,6 +825,18 @@
       "openInterest": 23497606.0,
       "timestamp": 1752337364800,
       "collect_time": "2025-07-13T00:22:52.849615"
+    },
+    {
+      "symbol": "TIAUSDT",
+      "openInterest": 23345776.0,
+      "timestamp": 1752364850899,
+      "collect_time": "2025-07-13T08:00:54.406941"
+    },
+    {
+      "symbol": "TIAUSDT",
+      "openInterest": 22958956.0,
+      "timestamp": 1752393644229,
+      "collect_time": "2025-07-13T16:00:46.855361"
     }
   ],
   "VIRTUAL": [
@@ -341,6 +845,18 @@
       "openInterest": 22674718.2,
       "timestamp": 1752337365622,
       "collect_time": "2025-07-13T00:22:53.351530"
+    },
+    {
+      "symbol": "VIRTUALUSDT",
+      "openInterest": 22654693.5,
+      "timestamp": 1752364851284,
+      "collect_time": "2025-07-13T08:00:52.758413"
+    },
+    {
+      "symbol": "VIRTUALUSDT",
+      "openInterest": 22535918.9,
+      "timestamp": 1752393639847,
+      "collect_time": "2025-07-13T16:00:44.048074"
     }
   ],
   "IP": [
@@ -349,6 +865,18 @@
       "openInterest": 4673941.5,
       "timestamp": 1752337370963,
       "collect_time": "2025-07-13T00:22:53.950273"
+    },
+    {
+      "symbol": "IPUSDT",
+      "openInterest": 4718567.6,
+      "timestamp": 1752364846875,
+      "collect_time": "2025-07-13T08:00:53.937228"
+    },
+    {
+      "symbol": "IPUSDT",
+      "openInterest": 4676787.4,
+      "timestamp": 1752393639464,
+      "collect_time": "2025-07-13T16:00:52.027605"
     }
   ],
   "MYX": [
@@ -357,6 +885,18 @@
       "openInterest": 58194111.0,
       "timestamp": 1752337372285,
       "collect_time": "2025-07-13T00:22:54.599059"
+    },
+    {
+      "symbol": "MYXUSDT",
+      "openInterest": 71537149.0,
+      "timestamp": 1752364846011,
+      "collect_time": "2025-07-13T08:00:51.357445"
+    },
+    {
+      "symbol": "MYXUSDT",
+      "openInterest": 73506637.0,
+      "timestamp": 1752393635018,
+      "collect_time": "2025-07-13T16:00:42.868159"
     }
   ],
   "OP": [
@@ -365,6 +905,18 @@
       "openInterest": 65114140.9,
       "timestamp": 1752337370153,
       "collect_time": "2025-07-13T00:22:54.876403"
+    },
+    {
+      "symbol": "OPUSDT",
+      "openInterest": 65117682.0,
+      "timestamp": 1752364846893,
+      "collect_time": "2025-07-13T08:00:53.240908"
+    },
+    {
+      "symbol": "OPUSDT",
+      "openInterest": 62430666.7,
+      "timestamp": 1752393636331,
+      "collect_time": "2025-07-13T16:00:44.985689"
     }
   ],
   "NEIRO": [
@@ -373,6 +925,18 @@
       "openInterest": 56769822296.0,
       "timestamp": 1752337372701,
       "collect_time": "2025-07-13T00:22:55.544198"
+    },
+    {
+      "symbol": "NEIROUSDT",
+      "openInterest": 54677786374.0,
+      "timestamp": 1752364847164,
+      "collect_time": "2025-07-13T08:00:53.705354"
+    },
+    {
+      "symbol": "NEIROUSDT",
+      "openInterest": 55117254659.0,
+      "timestamp": 1752393643523,
+      "collect_time": "2025-07-13T16:00:45.687743"
     }
   ],
   "APT": [
@@ -381,6 +945,18 @@
       "openInterest": 12439831.6,
       "timestamp": 1752337372040,
       "collect_time": "2025-07-13T00:22:56.398377"
+    },
+    {
+      "symbol": "APTUSDT",
+      "openInterest": 12501271.6,
+      "timestamp": 1752364850612,
+      "collect_time": "2025-07-13T08:00:54.873503"
+    },
+    {
+      "symbol": "APTUSDT",
+      "openInterest": 12581615.7,
+      "timestamp": 1752393640143,
+      "collect_time": "2025-07-13T16:00:45.220630"
     }
   ],
   "FIL": [
@@ -389,6 +965,18 @@
       "openInterest": 25681510.9,
       "timestamp": 1752337372286,
       "collect_time": "2025-07-13T00:22:56.737215"
+    },
+    {
+      "symbol": "FILUSDT",
+      "openInterest": 25493040.2,
+      "timestamp": 1752364847170,
+      "collect_time": "2025-07-13T08:00:53.473235"
+    },
+    {
+      "symbol": "FILUSDT",
+      "openInterest": 25650310.3,
+      "timestamp": 1752393638770,
+      "collect_time": "2025-07-13T16:00:45.456399"
     }
   ],
   "MOODENG": [
@@ -397,6 +985,18 @@
       "openInterest": 131246286.0,
       "timestamp": 1752337369688,
       "collect_time": "2025-07-13T00:22:57.319086"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "openInterest": 126146730.0,
+      "timestamp": 1752364851267,
+      "collect_time": "2025-07-13T08:00:54.170552"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "openInterest": 127044695.0,
+      "timestamp": 1752393642944,
+      "collect_time": "2025-07-13T16:00:46.390175"
     }
   ],
   "TAO": [
@@ -405,6 +1005,18 @@
       "openInterest": 129072.684,
       "timestamp": 1752337375435,
       "collect_time": "2025-07-13T00:22:57.968012"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "openInterest": 130463.39,
+      "timestamp": 1752364851285,
+      "collect_time": "2025-07-13T08:00:54.641494"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "openInterest": 130368.472,
+      "timestamp": 1752393640429,
+      "collect_time": "2025-07-13T16:00:45.919355"
     }
   ],
   "1INCH": [
@@ -413,6 +1025,18 @@
       "openInterest": 37203169.0,
       "timestamp": 1752337374137,
       "collect_time": "2025-07-13T00:22:58.259142"
+    },
+    {
+      "symbol": "1INCHUSDT",
+      "openInterest": 36650729.0,
+      "timestamp": 1752364854794,
+      "collect_time": "2025-07-13T08:00:56.039642"
+    },
+    {
+      "symbol": "1INCHUSDT",
+      "openInterest": 42979024.0,
+      "timestamp": 1752393636096,
+      "collect_time": "2025-07-13T16:00:40.971897"
     }
   ],
   "PORTAL": [
@@ -421,6 +1045,18 @@
       "openInterest": 105504605.2,
       "timestamp": 1752337376545,
       "collect_time": "2025-07-13T00:22:58.557553"
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "openInterest": 101977225.3,
+      "timestamp": 1752364854742,
+      "collect_time": "2025-07-13T08:00:59.072883"
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "openInterest": 92216496.7,
+      "timestamp": 1752393650826,
+      "collect_time": "2025-07-13T16:00:55.080032"
     }
   ],
   "CRV": [
@@ -429,6 +1065,18 @@
       "openInterest": 63147061.0,
       "timestamp": 1752337373762,
       "collect_time": "2025-07-13T00:22:58.876735"
+    },
+    {
+      "symbol": "CRVUSDT",
+      "openInterest": 62267787.5,
+      "timestamp": 1752364849930,
+      "collect_time": "2025-07-13T08:00:55.106111"
+    },
+    {
+      "symbol": "CRVUSDT",
+      "openInterest": 63312352.0,
+      "timestamp": 1752393643472,
+      "collect_time": "2025-07-13T16:00:46.623283"
     }
   ],
   "RESOLV": [
@@ -437,6 +1085,18 @@
       "openInterest": 65765628.0,
       "timestamp": 1752337374233,
       "collect_time": "2025-07-13T00:22:59.509824"
+    },
+    {
+      "symbol": "RESOLVUSDT",
+      "openInterest": 63181057.0,
+      "timestamp": 1752364850699,
+      "collect_time": "2025-07-13T08:00:56.272416"
+    },
+    {
+      "symbol": "RESOLVUSDT",
+      "openInterest": 59149645.0,
+      "timestamp": 1752393642937,
+      "collect_time": "2025-07-13T16:00:48.503576"
     }
   ],
   "FET": [
@@ -445,6 +1105,18 @@
       "openInterest": 60134984.0,
       "timestamp": 1752337375437,
       "collect_time": "2025-07-13T00:23:00.161575"
+    },
+    {
+      "symbol": "FETUSDT",
+      "openInterest": 58998946.0,
+      "timestamp": 1752364850460,
+      "collect_time": "2025-07-13T08:00:56.502944"
+    },
+    {
+      "symbol": "FETUSDT",
+      "openInterest": 56405879.0,
+      "timestamp": 1752393643727,
+      "collect_time": "2025-07-13T16:00:47.087713"
     }
   ],
   "AIN": [
@@ -453,6 +1125,18 @@
       "openInterest": 28080423.0,
       "timestamp": 1752337374682,
       "collect_time": "2025-07-13T00:23:00.815967"
+    },
+    {
+      "symbol": "AINUSDT",
+      "openInterest": 25119407.0,
+      "timestamp": 1752364850638,
+      "collect_time": "2025-07-13T08:00:55.571491"
+    },
+    {
+      "symbol": "AINUSDT",
+      "openInterest": 34103783.0,
+      "timestamp": 1752393639662,
+      "collect_time": "2025-07-13T16:00:42.157703"
     }
   ],
   "ETHFI": [
@@ -461,6 +1145,18 @@
       "openInterest": 26170597.6,
       "timestamp": 1752337380399,
       "collect_time": "2025-07-13T00:23:01.564807"
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "openInterest": 25660016.3,
+      "timestamp": 1752364854644,
+      "collect_time": "2025-07-13T08:00:57.198984"
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "openInterest": 25899264.1,
+      "timestamp": 1752393644221,
+      "collect_time": "2025-07-13T16:00:48.268878"
     }
   ],
   "ONDO": [
@@ -469,6 +1165,18 @@
       "openInterest": 61134268.1,
       "timestamp": 1752337378944,
       "collect_time": "2025-07-13T00:23:02.708457"
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "openInterest": 60820819.1,
+      "timestamp": 1752364854649,
+      "collect_time": "2025-07-13T08:00:58.134959"
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "openInterest": 60526710.3,
+      "timestamp": 1752393647907,
+      "collect_time": "2025-07-13T16:00:49.916081"
     }
   ],
   "INJ": [
@@ -477,6 +1185,18 @@
       "openInterest": 2635878.4,
       "timestamp": 1752337380473,
       "collect_time": "2025-07-13T00:23:03.406584"
+    },
+    {
+      "symbol": "INJUSDT",
+      "openInterest": 2585071.1,
+      "timestamp": 1752364851498,
+      "collect_time": "2025-07-13T08:00:56.734263"
+    },
+    {
+      "symbol": "INJUSDT",
+      "openInterest": 2552524.3,
+      "timestamp": 1752393643531,
+      "collect_time": "2025-07-13T16:00:47.792070"
     }
   ],
   "ALPHA": [
@@ -485,6 +1205,12 @@
       "openInterest": 272449222.0,
       "timestamp": 1752337380229,
       "collect_time": "2025-07-13T00:23:03.867758"
+    },
+    {
+      "symbol": "ALPHAUSDT",
+      "openInterest": 247795910.0,
+      "timestamp": 1752364858861,
+      "collect_time": "2025-07-13T08:01:01.882474"
     }
   ],
   "SPX": [
@@ -493,6 +1219,18 @@
       "openInterest": 18399781.0,
       "timestamp": 1752337380927,
       "collect_time": "2025-07-13T00:23:04.691811"
+    },
+    {
+      "symbol": "SPXUSDT",
+      "openInterest": 18279053.0,
+      "timestamp": 1752364855478,
+      "collect_time": "2025-07-13T08:00:57.666989"
+    },
+    {
+      "symbol": "SPXUSDT",
+      "openInterest": 18179844.0,
+      "timestamp": 1752393641916,
+      "collect_time": "2025-07-13T16:00:47.555440"
     }
   ],
   "BAKE": [
@@ -501,6 +1239,18 @@
       "openInterest": 49080966.0,
       "timestamp": 1752337380395,
       "collect_time": "2025-07-13T00:23:05.192288"
+    },
+    {
+      "symbol": "BAKEUSDT",
+      "openInterest": 51487684.0,
+      "timestamp": 1752364851715,
+      "collect_time": "2025-07-13T08:00:55.808062"
+    },
+    {
+      "symbol": "BAKEUSDT",
+      "openInterest": 56221482.0,
+      "timestamp": 1752393643421,
+      "collect_time": "2025-07-13T16:00:51.323126"
     }
   ],
   "SAHARA": [
@@ -509,6 +1259,18 @@
       "openInterest": 216174885.0,
       "timestamp": 1752337382763,
       "collect_time": "2025-07-13T00:23:05.766040"
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "openInterest": 223274351.0,
+      "timestamp": 1752364855762,
+      "collect_time": "2025-07-13T08:00:57.430854"
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "openInterest": 224728414.0,
+      "timestamp": 1752393641176,
+      "collect_time": "2025-07-13T16:00:48.976033"
     }
   ],
   "B": [
@@ -517,6 +1279,18 @@
       "openInterest": 94696721.0,
       "timestamp": 1752337380456,
       "collect_time": "2025-07-13T00:23:06.332252"
+    },
+    {
+      "symbol": "BUSDT",
+      "openInterest": 95213531.0,
+      "timestamp": 1752364859581,
+      "collect_time": "2025-07-13T08:01:01.642128"
+    },
+    {
+      "symbol": "BUSDT",
+      "openInterest": 93688504.0,
+      "timestamp": 1752393635287,
+      "collect_time": "2025-07-13T16:00:48.741195"
     }
   ],
   "GALA": [
@@ -525,6 +1299,18 @@
       "openInterest": 1528367135.0,
       "timestamp": 1752337384047,
       "collect_time": "2025-07-13T00:23:06.742180"
+    },
+    {
+      "symbol": "GALAUSDT",
+      "openInterest": 1531202783.0,
+      "timestamp": 1752364855107,
+      "collect_time": "2025-07-13T08:00:58.839771"
+    },
+    {
+      "symbol": "GALAUSDT",
+      "openInterest": 1496909669.0,
+      "timestamp": 1752393642145,
+      "collect_time": "2025-07-13T16:00:49.448439"
     }
   ],
   "ETC": [
@@ -533,6 +1319,18 @@
       "openInterest": 2246252.43,
       "timestamp": 1752337379053,
       "collect_time": "2025-07-13T00:23:07.316773"
+    },
+    {
+      "symbol": "ETCUSDT",
+      "openInterest": 2197183.69,
+      "timestamp": 1752364854865,
+      "collect_time": "2025-07-13T08:01:00.003285"
+    },
+    {
+      "symbol": "ETCUSDT",
+      "openInterest": 2199761.16,
+      "timestamp": 1752393646800,
+      "collect_time": "2025-07-13T16:00:50.389416"
     }
   ],
   "CROSS": [
@@ -541,6 +1339,18 @@
       "openInterest": 23611310.0,
       "timestamp": 1752337384349,
       "collect_time": "2025-07-13T00:23:07.849009"
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "openInterest": 23729343.0,
+      "timestamp": 1752364854281,
+      "collect_time": "2025-07-13T08:00:57.898693"
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "openInterest": 25685418.0,
+      "timestamp": 1752393643200,
+      "collect_time": "2025-07-13T16:00:47.319726"
     }
   ],
   "TON": [
@@ -549,6 +1359,18 @@
       "openInterest": 18086404.9,
       "timestamp": 1752337384659,
       "collect_time": "2025-07-13T00:23:08.460311"
+    },
+    {
+      "symbol": "TONUSDT",
+      "openInterest": 17964066.8,
+      "timestamp": 1752364854621,
+      "collect_time": "2025-07-13T08:00:58.600949"
+    },
+    {
+      "symbol": "TONUSDT",
+      "openInterest": 18148153.6,
+      "timestamp": 1752393647270,
+      "collect_time": "2025-07-13T16:00:49.215860"
     }
   ],
   "BULLA": [
@@ -557,6 +1379,18 @@
       "openInterest": 50974485.0,
       "timestamp": 1752337386152,
       "collect_time": "2025-07-13T00:23:09.151382"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "openInterest": 50460137.0,
+      "timestamp": 1752364851393,
+      "collect_time": "2025-07-13T08:00:55.340013"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "openInterest": 50815339.0,
+      "timestamp": 1752393639089,
+      "collect_time": "2025-07-13T16:00:46.155026"
     }
   ],
   "ALT": [
@@ -565,6 +1399,18 @@
       "openInterest": 297163792.0,
       "timestamp": 1752337388022,
       "collect_time": "2025-07-13T00:23:09.685404"
+    },
+    {
+      "symbol": "ALTUSDT",
+      "openInterest": 283598626.0,
+      "timestamp": 1752364859907,
+      "collect_time": "2025-07-13T08:01:01.175034"
+    },
+    {
+      "symbol": "ALTUSDT",
+      "openInterest": 303083111.0,
+      "timestamp": 1752393645344,
+      "collect_time": "2025-07-13T16:00:55.313768"
     }
   ],
   "INIT": [
@@ -573,6 +1419,18 @@
       "openInterest": 30443395.0,
       "timestamp": 1752337387908,
       "collect_time": "2025-07-13T00:23:10.308429"
+    },
+    {
+      "symbol": "INITUSDT",
+      "openInterest": 29650488.0,
+      "timestamp": 1752364850510,
+      "collect_time": "2025-07-13T08:00:58.368392"
+    },
+    {
+      "symbol": "INITUSDT",
+      "openInterest": 29435123.0,
+      "timestamp": 1752393648251,
+      "collect_time": "2025-07-13T16:00:53.428577"
     }
   ],
   "S": [
@@ -581,6 +1439,18 @@
       "openInterest": 62398281.0,
       "timestamp": 1752337386623,
       "collect_time": "2025-07-13T00:23:10.623029"
+    },
+    {
+      "symbol": "SUSDT",
+      "openInterest": 62548507.0,
+      "timestamp": 1752364857848,
+      "collect_time": "2025-07-13T08:01:03.518003"
+    },
+    {
+      "symbol": "SUSDT",
+      "openInterest": 62414806.0,
+      "timestamp": 1752393649092,
+      "collect_time": "2025-07-13T16:00:56.253522"
     }
   ],
   "1000FLOKI": [
@@ -589,6 +1459,18 @@
       "openInterest": 202527791.0,
       "timestamp": 1752337386990,
       "collect_time": "2025-07-13T00:23:10.916735"
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "openInterest": 203891290.0,
+      "timestamp": 1752364855800,
+      "collect_time": "2025-07-13T08:00:59.770665"
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "openInterest": 196801632.0,
+      "timestamp": 1752393643730,
+      "collect_time": "2025-07-13T16:00:50.150277"
     }
   ],
   "LOKA": [
@@ -597,6 +1479,12 @@
       "openInterest": 46934907.0,
       "timestamp": 1752337387300,
       "collect_time": "2025-07-13T00:23:11.827029"
+    },
+    {
+      "symbol": "LOKAUSDT",
+      "openInterest": 43351972.0,
+      "timestamp": 1752364854752,
+      "collect_time": "2025-07-13T08:00:59.307769"
     }
   ],
   "MAGIC": [
@@ -605,6 +1493,18 @@
       "openInterest": 57854090.5,
       "timestamp": 1752337387761,
       "collect_time": "2025-07-13T00:23:12.532509"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "openInterest": 55365711.1,
+      "timestamp": 1752364854229,
+      "collect_time": "2025-07-13T08:01:00.709571"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "openInterest": 53336953.8,
+      "timestamp": 1752393647409,
+      "collect_time": "2025-07-13T16:00:54.132786"
     }
   ],
   "TANSSI": [
@@ -613,6 +1513,18 @@
       "openInterest": 90990010.0,
       "timestamp": 1752337386413,
       "collect_time": "2025-07-13T00:23:12.887044"
+    },
+    {
+      "symbol": "TANSSIUSDT",
+      "openInterest": 89759943.0,
+      "timestamp": 1752364854531,
+      "collect_time": "2025-07-13T08:01:00.236214"
+    },
+    {
+      "symbol": "TANSSIUSDT",
+      "openInterest": 95097281.0,
+      "timestamp": 1752393645276,
+      "collect_time": "2025-07-13T16:00:51.556286"
     }
   ],
   "VIC": [
@@ -621,6 +1533,18 @@
       "openInterest": 24913890.0,
       "timestamp": 1752337390271,
       "collect_time": "2025-07-13T00:23:13.868783"
+    },
+    {
+      "symbol": "VICUSDT",
+      "openInterest": 24225448.0,
+      "timestamp": 1752364860207,
+      "collect_time": "2025-07-13T08:01:02.585218"
+    },
+    {
+      "symbol": "VICUSDT",
+      "openInterest": 23501288.0,
+      "timestamp": 1752393641429,
+      "collect_time": "2025-07-13T16:00:53.195276"
     }
   ],
   "MASK": [
@@ -629,6 +1553,18 @@
       "openInterest": 10120701.0,
       "timestamp": 1752337390884,
       "collect_time": "2025-07-13T00:23:14.469579"
+    },
+    {
+      "symbol": "MASKUSDT",
+      "openInterest": 10069932.0,
+      "timestamp": 1752364857777,
+      "collect_time": "2025-07-13T08:01:03.747577"
+    },
+    {
+      "symbol": "MASKUSDT",
+      "openInterest": 11119102.0,
+      "timestamp": 1752393646314,
+      "collect_time": "2025-07-13T16:00:49.683898"
     }
   ],
   "MKR": [
@@ -637,6 +1573,18 @@
       "openInterest": 18774.608,
       "timestamp": 1752337387618,
       "collect_time": "2025-07-13T00:23:15.088592"
+    },
+    {
+      "symbol": "MKRUSDT",
+      "openInterest": 18843.929,
+      "timestamp": 1752364854622,
+      "collect_time": "2025-07-13T08:01:02.352500"
+    },
+    {
+      "symbol": "MKRUSDT",
+      "openInterest": 18919.871,
+      "timestamp": 1752393649209,
+      "collect_time": "2025-07-13T16:00:52.729253"
     }
   ],
   "LA": [
@@ -645,6 +1593,18 @@
       "openInterest": 29116494.0,
       "timestamp": 1752337389373,
       "collect_time": "2025-07-13T00:23:15.668761"
+    },
+    {
+      "symbol": "LAUSDT",
+      "openInterest": 28735850.9,
+      "timestamp": 1752364855358,
+      "collect_time": "2025-07-13T08:01:00.943253"
+    },
+    {
+      "symbol": "LAUSDT",
+      "openInterest": 29960041.5,
+      "timestamp": 1752393647478,
+      "collect_time": "2025-07-13T16:00:51.089914"
     }
   ],
   "MOVE": [
@@ -653,6 +1613,18 @@
       "openInterest": 131569121.0,
       "timestamp": 1752337395277,
       "collect_time": "2025-07-13T00:23:16.110195"
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "openInterest": 131268729.0,
+      "timestamp": 1752364858831,
+      "collect_time": "2025-07-13T08:01:02.816116"
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "openInterest": 133404200.0,
+      "timestamp": 1752393642938,
+      "collect_time": "2025-07-13T16:00:52.494767"
     }
   ],
   "SOPH": [
@@ -661,6 +1633,12 @@
       "openInterest": 234558261.0,
       "timestamp": 1752337391956,
       "collect_time": "2025-07-13T00:23:16.787736"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "openInterest": 236467240.0,
+      "timestamp": 1752364854648,
+      "collect_time": "2025-07-13T08:01:00.474938"
     }
   ],
   "LDO": [
@@ -669,6 +1647,18 @@
       "openInterest": 44433146.0,
       "timestamp": 1752337392761,
       "collect_time": "2025-07-13T00:23:17.270179"
+    },
+    {
+      "symbol": "LDOUSDT",
+      "openInterest": 44207841.0,
+      "timestamp": 1752364858557,
+      "collect_time": "2025-07-13T08:01:03.283540"
+    },
+    {
+      "symbol": "LDOUSDT",
+      "openInterest": 44400080.0,
+      "timestamp": 1752393646945,
+      "collect_time": "2025-07-13T16:00:52.961988"
     }
   ],
   "POPCAT": [
@@ -677,6 +1667,18 @@
       "openInterest": 52317760.0,
       "timestamp": 1752337394639,
       "collect_time": "2025-07-13T00:23:17.885444"
+    },
+    {
+      "symbol": "POPCATUSDT",
+      "openInterest": 51259427.0,
+      "timestamp": 1752364857670,
+      "collect_time": "2025-07-13T08:01:02.118853"
+    },
+    {
+      "symbol": "POPCATUSDT",
+      "openInterest": 51339085.0,
+      "timestamp": 1752393648554,
+      "collect_time": "2025-07-13T16:00:52.261840"
     }
   ],
   "ORDI": [
@@ -685,6 +1687,18 @@
       "openInterest": 2526669.4,
       "timestamp": 1752337391507,
       "collect_time": "2025-07-13T00:23:18.821397"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "openInterest": 2483232.9,
+      "timestamp": 1752364857893,
+      "collect_time": "2025-07-13T08:01:03.047264"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "openInterest": 2428875.0,
+      "timestamp": 1752393648540,
+      "collect_time": "2025-07-13T16:00:55.778464"
     }
   ],
   "NEIROETH": [
@@ -693,6 +1707,18 @@
       "openInterest": 142999041.0,
       "timestamp": 1752337395293,
       "collect_time": "2025-07-13T00:23:19.417095"
+    },
+    {
+      "symbol": "NEIROETHUSDT",
+      "openInterest": 142788448.0,
+      "timestamp": 1752364849665,
+      "collect_time": "2025-07-13T08:00:56.967992"
+    },
+    {
+      "symbol": "NEIROETHUSDT",
+      "openInterest": 137450531.0,
+      "timestamp": 1752393643314,
+      "collect_time": "2025-07-13T16:00:48.035362"
     }
   ],
   "JUP": [
@@ -701,6 +1727,18 @@
       "openInterest": 66423222.0,
       "timestamp": 1752337393917,
       "collect_time": "2025-07-13T00:23:19.691579"
+    },
+    {
+      "symbol": "JUPUSDT",
+      "openInterest": 65690348.0,
+      "timestamp": 1752364858422,
+      "collect_time": "2025-07-13T08:01:04.443166"
+    },
+    {
+      "symbol": "JUPUSDT",
+      "openInterest": 65269951.0,
+      "timestamp": 1752393647878,
+      "collect_time": "2025-07-13T16:00:54.367231"
     }
   ],
   "LUMIA": [
@@ -709,6 +1747,18 @@
       "openInterest": 10889403.2,
       "timestamp": 1752337384879,
       "collect_time": "2025-07-13T00:23:20.269064"
+    },
+    {
+      "symbol": "LUMIAUSDT",
+      "openInterest": 10404588.5,
+      "timestamp": 1752364857652,
+      "collect_time": "2025-07-13T08:01:04.679273"
+    },
+    {
+      "symbol": "LUMIAUSDT",
+      "openInterest": 10411299.7,
+      "timestamp": 1752393647406,
+      "collect_time": "2025-07-13T16:00:53.890404"
     }
   ],
   "AI16Z": [
@@ -717,6 +1767,18 @@
       "openInterest": 68808916.5,
       "timestamp": 1752337396491,
       "collect_time": "2025-07-13T00:23:20.796302"
+    },
+    {
+      "symbol": "AI16ZUSDT",
+      "openInterest": 69722516.1,
+      "timestamp": 1752364855714,
+      "collect_time": "2025-07-13T08:01:03.978761"
+    },
+    {
+      "symbol": "AI16ZUSDT",
+      "openInterest": 68374949.9,
+      "timestamp": 1752393649061,
+      "collect_time": "2025-07-13T16:00:54.603127"
     }
   ],
   "SKYAI": [
@@ -725,6 +1787,18 @@
       "openInterest": 134405196.0,
       "timestamp": 1752337394711,
       "collect_time": "2025-07-13T00:23:21.623641"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "openInterest": 145821942.0,
+      "timestamp": 1752364855352,
+      "collect_time": "2025-07-13T08:00:59.540618"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "openInterest": 136843269.0,
+      "timestamp": 1752393650374,
+      "collect_time": "2025-07-13T16:00:56.486638"
     }
   ],
   "TRB": [
@@ -733,6 +1807,18 @@
       "openInterest": 444529.6,
       "timestamp": 1752337399733,
       "collect_time": "2025-07-13T00:23:22.240960"
+    },
+    {
+      "symbol": "TRBUSDT",
+      "openInterest": 440044.5,
+      "timestamp": 1752364863360,
+      "collect_time": "2025-07-13T08:01:05.152457"
+    },
+    {
+      "symbol": "TRBUSDT",
+      "openInterest": 448023.0,
+      "timestamp": 1752393644985,
+      "collect_time": "2025-07-13T16:00:56.012872"
     }
   ],
   "AIOT": [
@@ -741,6 +1827,18 @@
       "openInterest": 7454006.0,
       "timestamp": 1752337399457,
       "collect_time": "2025-07-13T00:23:22.853844"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "openInterest": 7642771.0,
+      "timestamp": 1752364854530,
+      "collect_time": "2025-07-13T08:01:01.408609"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "openInterest": 7194365.0,
+      "timestamp": 1752393643641,
+      "collect_time": "2025-07-13T16:00:51.791229"
     }
   ],
   "ALGO": [
@@ -749,6 +1847,18 @@
       "openInterest": 75916178.5,
       "timestamp": 1752337397574,
       "collect_time": "2025-07-13T00:23:23.442205"
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "openInterest": 74692990.5,
+      "timestamp": 1752364860390,
+      "collect_time": "2025-07-13T08:01:06.334355"
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "openInterest": 75239891.9,
+      "timestamp": 1752393642451,
+      "collect_time": "2025-07-13T16:00:50.622875"
     }
   ],
   "GOAT": [
@@ -757,6 +1867,18 @@
       "openInterest": 108686968.0,
       "timestamp": 1752337395628,
       "collect_time": "2025-07-13T00:23:24.149789"
+    },
+    {
+      "symbol": "GOATUSDT",
+      "openInterest": 105116394.0,
+      "timestamp": 1752364853999,
+      "collect_time": "2025-07-13T08:01:05.388399"
+    },
+    {
+      "symbol": "GOATUSDT",
+      "openInterest": 105570873.0,
+      "timestamp": 1752393649268,
+      "collect_time": "2025-07-13T16:00:56.958946"
     }
   ],
   "SYRUP": [
@@ -765,6 +1887,18 @@
       "openInterest": 37180011.0,
       "timestamp": 1752337403398,
       "collect_time": "2025-07-13T00:23:24.831467"
+    },
+    {
+      "symbol": "SYRUPUSDT",
+      "openInterest": 37383617.0,
+      "timestamp": 1752364859115,
+      "collect_time": "2025-07-13T08:01:04.208300"
+    },
+    {
+      "symbol": "SYRUPUSDT",
+      "openInterest": 37993535.0,
+      "timestamp": 1752393649467,
+      "collect_time": "2025-07-13T16:00:54.846355"
     }
   ],
   "OM": [
@@ -773,6 +1907,12 @@
       "openInterest": 95875802.4,
       "timestamp": 1752337398363,
       "collect_time": "2025-07-13T00:23:25.409091"
+    },
+    {
+      "symbol": "OMUSDT",
+      "openInterest": 98605627.9,
+      "timestamp": 1752393647259,
+      "collect_time": "2025-07-13T16:00:53.659480"
     }
   ],
   "CFX": [
@@ -797,6 +1937,82 @@
       "openInterest": 12340299.1,
       "timestamp": 1752337400269,
       "collect_time": "2025-07-13T00:23:27.118789"
+    },
+    {
+      "symbol": "EIGENUSDT",
+      "openInterest": 11629602.8,
+      "timestamp": 1752393650047,
+      "collect_time": "2025-07-13T16:00:56.720992"
+    }
+  ],
+  "MLN": [
+    {
+      "symbol": "MLNUSDT",
+      "openInterest": 195704.15,
+      "timestamp": 1752364860336,
+      "collect_time": "2025-07-13T08:01:04.916269"
+    }
+  ],
+  "ICNT": [
+    {
+      "symbol": "ICNTUSDT",
+      "openInterest": 9222021.0,
+      "timestamp": 1752364857020,
+      "collect_time": "2025-07-13T08:01:05.635642"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "openInterest": 8872343.0,
+      "timestamp": 1752393646758,
+      "collect_time": "2025-07-13T16:00:55.545213"
+    }
+  ],
+  "STORJ": [
+    {
+      "symbol": "STORJUSDT",
+      "openInterest": 14222256.0,
+      "timestamp": 1752364863154,
+      "collect_time": "2025-07-13T08:01:05.867709"
+    }
+  ],
+  "POLYX": [
+    {
+      "symbol": "POLYXUSDT",
+      "openInterest": 25211492.0,
+      "timestamp": 1752364858375,
+      "collect_time": "2025-07-13T08:01:06.100137"
+    }
+  ],
+  "AUCTION": [
+    {
+      "symbol": "AUCTIONUSDT",
+      "openInterest": 1248616.12,
+      "timestamp": 1752393635843,
+      "collect_time": "2025-07-13T16:00:39.285736"
+    }
+  ],
+  "MOCA": [
+    {
+      "symbol": "MOCAUSDT",
+      "openInterest": 113934892.0,
+      "timestamp": 1752393635434,
+      "collect_time": "2025-07-13T16:00:41.919646"
+    }
+  ],
+  "PHB": [
+    {
+      "symbol": "PHBUSDT",
+      "openInterest": 7805766.0,
+      "timestamp": 1752393631536,
+      "collect_time": "2025-07-13T16:00:50.857369"
+    }
+  ],
+  "ARKM": [
+    {
+      "symbol": "ARKMUSDT",
+      "openInterest": 18835990.0,
+      "timestamp": 1752393651797,
+      "collect_time": "2025-07-13T16:00:57.191622"
     }
   ]
 }
