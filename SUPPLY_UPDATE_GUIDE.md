@@ -76,34 +76,56 @@ python3 update_supply.py [选项] [参数]
 
 #### 1. 强制更新所有币种（推荐）
 ```bash
-python3 update_supply.py --force-all --save
+python3 update_supply.py --force-all --save --max-retries 5 --batch-delay 10
 ```
 - **功能**：强制更新所有币种的流通量，包括已有数据的币种
 - **适用场景**：定期更新，确保数据最新
 - **特点**：会覆盖现有数据，获取最新的流通量信息
+- **参数说明**：
+  - `--force-all`：强制更新所有币种
+  - `--save`：保存到manual_supply.py文件
+  - `--max-retries 5`：最大重试5次
+  - `--batch-delay 10`：批次间延迟10秒
 
 #### 2. 只更新新币种
 ```bash
-python3 update_supply.py --new --save
+python3 update_supply.py --new --save --max-retries 5 --batch-delay 10
 ```
 - **功能**：只更新没有流通量数据的币种
 - **适用场景**：新增币种时使用
 - **特点**：不会覆盖已有数据，只补充缺失数据
+- **参数说明**：
+  - `--new`：只更新新币种
+  - `--save`：保存到manual_supply.py文件
+  - `--max-retries 5`：最大重试5次
+  - `--batch-delay 10`：批次间延迟10秒
 
 #### 3. 更新指定币种
 ```bash
-python3 update_supply.py --symbols BTC ETH BNB --force --save
+python3 update_supply.py --symbols BTC ETH BNB --force --save --max-retries 5 --batch-delay 10
 ```
 - **功能**：更新指定币种的流通量
 - **适用场景**：需要更新特定币种时
 - **特点**：精确控制，只更新需要的币种
+- **参数说明**：
+  - `--symbols BTC ETH BNB`：指定要更新的币种
+  - `--force`：强制更新，覆盖现有数据
+  - `--save`：保存到manual_supply.py文件
+  - `--max-retries 5`：最大重试5次
+  - `--batch-delay 10`：批次间延迟10秒
 
 #### 4. 更新所有币种（包括已有数据的）
 ```bash
-python3 update_supply.py --all --force --save
+python3 update_supply.py --all --force --save --max-retries 5 --batch-delay 10
 ```
 - **功能**：更新所有币种，包括已有数据的
 - **适用场景**：与 `--force-all` 类似，但会包含 `manual_supply.py` 中的币种
+- **参数说明**：
+  - `--all`：更新所有币种
+  - `--force`：强制更新，覆盖现有数据
+  - `--save`：保存到manual_supply.py文件
+  - `--max-retries 5`：最大重试5次
+  - `--batch-delay 10`：批次间延迟10秒
 
 ### 命令行选项说明
 
@@ -174,14 +196,14 @@ MANUAL_SUPPLY = {
 ## 使用建议
 
 ### 定期更新策略
-1. **每日更新**：`python3 update_supply.py --force-all --save`
-2. **新币种更新**：`python3 update_supply.py --new --save`
-3. **重要币种更新**：`python3 update_supply.py --symbols BTC ETH BNB --force --save`
+1. **每日更新**：`python3 update_supply.py --force-all --save --max-retries 5 --batch-delay 10`
+2. **新币种更新**：`python3 update_supply.py --new --save --max-retries 5 --batch-delay 10`
+3. **重要币种更新**：`python3 update_supply.py --symbols BTC ETH BNB --force --save --max-retries 5 --batch-delay 10`
 
 ### 重试机制优化策略
-1. **网络不稳定环境**：`python3 update_supply.py --new --save --batch-size 5 --max-retries 5`
-2. **API限制严格环境**：`python3 update_supply.py --new --save --batch-size 3 --batch-delay 10`
-3. **大批量更新**：`python3 update_supply.py --force-all --save --batch-size 15 --batch-delay 8`
+1. **网络不稳定环境**：`python3 update_supply.py --new --save --batch-size 5 --max-retries 5 --batch-delay 10`
+2. **API限制严格环境**：`python3 update_supply.py --new --save --batch-size 3 --batch-delay 15 --max-retries 5`
+3. **大批量更新**：`python3 update_supply.py --force-all --save --batch-size 15 --batch-delay 8 --max-retries 5`
 4. **高成功率要求**：`python3 update_supply.py --new --save --max-retries 5 --batch-delay 10`
 
 ### 币种映射维护
@@ -203,6 +225,63 @@ MANUAL_SUPPLY = {
 4. **映射优化**：确保币种映射正确，减少API调用失败
 5. **重试机制**：指数退避算法自动处理网络异常和临时错误
 6. **批处理优化**：可配置批处理大小和延迟，平衡速度和稳定性
+
+## 处理"已有数据跳过"的情况
+
+### 问题描述
+当运行流通量更新工具时，可能会看到类似以下的日志：
+```
+2025-07-13 21:19:41,314 - INFO - AVAAI 已有流通量数据，跳过更新
+2025-07-13 21:19:41,314 - INFO - BEAMX 已有流通量数据，跳过更新
+```
+
+### 原因分析
+1. **正常行为**：工具检测到 `manual_supply.py` 中已有该币种的流通量数据
+2. **避免重复更新**：防止不必要的API调用和数据处理
+3. **保护现有数据**：避免意外覆盖手动设置的数据
+
+### 解决方案
+
+#### 1. 强制更新所有币种（推荐）
+```bash
+python3 update_supply.py --force-all --save --max-retries 5 --batch-delay 10
+```
+- **作用**：强制更新所有币种，包括已有数据的币种
+- **适用场景**：定期更新，确保数据最新
+- **特点**：会覆盖现有数据，获取最新的流通量信息
+
+#### 2. 只更新新币种
+```bash
+python3 update_supply.py --new --save --max-retries 5 --batch-delay 10
+```
+- **作用**：只更新没有流通量数据的币种
+- **适用场景**：新增币种时使用
+- **特点**：不会覆盖已有数据，只补充缺失数据
+
+#### 3. 更新指定币种
+```bash
+python3 update_supply.py --symbols BROCCOLI714 BROCCOLIF3B BTCDOM --force --save --max-retries 5 --batch-delay 10
+```
+- **作用**：更新指定币种的流通量
+- **适用场景**：需要更新特定币种时
+- **特点**：精确控制，只更新需要的币种
+
+### 检查当前数据状态
+```bash
+# 检查当前流通量数据数量
+python3 -c "
+from manual_supply import MANUAL_SUPPLY
+print(f'当前流通量数据数量: {len(MANUAL_SUPPLY)}')
+print(f'有数据的币种: {len([k for k, v in MANUAL_SUPPLY.items() if v is not None])}')
+print(f'无数据的币种: {len([k for k, v in MANUAL_SUPPLY.items() if v is None])}')
+"
+```
+
+### 最佳实践建议
+1. **定期强制更新**：每周或每月使用 `--force-all` 更新所有币种
+2. **新币种及时更新**：发现新币种时使用 `--new` 更新
+3. **失败币种单独处理**：对失败的币种使用 `--symbols` 单独更新
+4. **监控更新报告**：查看 `supply_update_report.json` 了解更新情况
 
 ## 常见问题
 
